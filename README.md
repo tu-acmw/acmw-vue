@@ -1,6 +1,6 @@
-# acmw
+# ACM-W vue website
 
-> Acmw website
+> vue'd
 
 ## Build Setup
 
