@@ -5,7 +5,7 @@ import 'mutationobserver-shim'
 import Vue from 'vue';
 import App from './App';
 import BootstrapVue from 'bootstrap-vue';
-import 'bootstrap'
+import 'bootstrap';
 
 Vue.use(BootstrapVue);
 

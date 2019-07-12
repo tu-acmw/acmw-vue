@@ -1,12 +1,12 @@
 <template>
-  <div class="jumbotron">
+  <div id="about" class="jumbotron">
     <div class="grid">
-      <div class="col-md-12"><h1>{{ header }}</h1></div>
+      <div class="col-md-12"><h2>{{ header }}</h2></div>
       <div class="col-md-12"><p>{{ description }}</p></div>
       <div class="row center">
         <div class="col-sm-6 col-md-3" v-for="value in values">
           <i class="fa" :class="value.icon"></i>
-          <h2>{{ value.header }}</h2>
+          <h3>{{ value.header }}</h3>
           <p>{{ value.description }}</p>
         </div>
       </div>
@@ -36,28 +36,27 @@ export default {
 </script>
 
 <style scoped>
-html{
-  font-family: sans-serif;
+body, html {
+  height: 100%;
+}
+
+.jumbotron{
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: #2c2c2c;
+  height: 100%;
+  margin: 2%;
+  position: relative;
 }
 .grid{
   display: inline-grid;
-  grid-template-rows: 1fr 1fr 5fr;
+  grid-template-rows: auto auto auto;
   text-align: center;
 }
 .container{
   display: inline-block;
-}
-.jumbotron{
-  display: flex;
-  justify-content: center;
-  background: #2c2c2c;
-  margin: 2%;
-}
-h1, h2{
-  color: #5cb59b;
-}
-h2{
-  font-size: 18pt;
 }
 p{
   color: #d7d5d9;
@@ -66,6 +65,11 @@ i{
   margin: 10px;
   font-size: 24pt;
   color: #d7d5d9;
+}
+@media (max-width: 576px){
+  .grid{
+    display: block;
+  }
 }
 
 </style>

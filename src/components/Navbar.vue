@@ -1,49 +1,11 @@
 <template>
-<!--
-  <div class="navbar">
-    <header class="header">
-      <div role="navigation" class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-          <div class="navbar-header"><a href="#" class="navbar-brand">ACM-W</a>
-            <div class="navbar-buttons">
-              <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle navbar-btn">
-              <i class="fa fa-align-justify "></i></button>
-            </div>
-          </div>
-          <div id="navigation" class="collapse navbar-collapse navbar-right">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#about">About</a></li>
-              <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Events <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#events">Upcoming</a></li>
-                  <li><a href="2019_events.html">2019</a></li>
-                </ul>
-              </li>
-              <li><a href="#faq">FAQ</a></li>
-              <li><a href="#signup">Sign Up</a></li>
-              <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">More <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="blog.html">Blog</a></li>
-                  <li><a target="_blank" href="https://goo.gl/forms/AeBk6ST8iEqxRUvL2">Feedback</a></li>
-                </ul>
-              </li>
-              <li>
-                <p style="margin-bottom: 0px"> <a href="mailto:tuacmw@gmail.com" class="btn btn-white" style="margin-top: 6px;">Contact</a></p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </header>
-  </div>
-
--->
   <nav class="navbar navbar-default navbar-fixed-top">
     <header class="header">
       <div role="navigation" class="navbar navbar-default">
         <div class="container">
-          <div class="navbar-header"><a class="navbar-toggle collapsed navbar-btn" data-toggle="collapse" data-target=".navbar-collapse">
-              <a href="#" class="navbar-brand">ACM-W</a><i class="fa fa-align-justify"></i></a>
+          <div class="navbar-header">
+            <a href="home" class="navbar-brand">ACM-W</a>
+            <a class="navbar-toggle collapsed navbar-btn" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-align-justify"></i></a>
           </div>
           <div id="navigation" class="collapse navbar-collapse navbar-right">
             <div class="nav navbar-nav navbar-right">
@@ -81,6 +43,7 @@ export default {
   width: 100%;
   display:flex;
   justify-content: flex-end;
+  align-content: center;
   margin: 0px;
 }
 .navbar {
@@ -90,6 +53,9 @@ export default {
   display: flex;
   justify-content: flex-end; 
   text-align: right;
+}
+.navbar-brand{
+
 }
 a, i {
   font-weight: bold;
@@ -101,6 +67,9 @@ a, i {
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out; 
   cursor: pointer; 
+}
+i{
+  font-size: 24pt;
 }
 a:focus, a:hover, i:focus, i:hover {
   color:#5cb59b;

@@ -1,13 +1,15 @@
 <template>
-  <div class="main-jumbotron">
+  <section id="home">
+    <div class="main-jumbotron">
       <div class="container">
-        <img src="@/assets/acmw_logo.png" class="img-responsive rounded col-xs-12" alt="ACM-W's Logo, an owl on a laptop">
+          <img src="@/assets/acmw_logo.png" class="img-responsive rounded col-xs-12" alt="ACM-W's Logo, an owl on a laptop">
       </div>
       <div class="container">
-        <a data-animate-hover="pulse" v-for="media in socialmedias" :href="media.link"><i class='fab' :class="media.icon"></i></a>
-        <a data-animate-hover="pulse" href="mailto:tuacmw@gmail.com"><i class="fas fa-at"></i></a>
+          <a data-animate-hover="pulse" v-for="media in socialmedias" :href="media.link"><i class='fab' :class="media.icon"></i></a>
+          <a data-animate-hover="pulse" href="mailto:tuacmw@gmail.com"><i class="fas fa-at"></i></a>
       </div>
     </div>
+  </section>
 </template>
 <script>
 
@@ -26,7 +28,15 @@ export default {
 </script>
 
 <style scoped>
+body, html {
+  height: 100%;
+}
+
 .main-jumbotron{
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background: #2c2c2c;
   height: 100%;
   margin: 0;
@@ -57,5 +67,20 @@ a:focus, a:hover, i:focus, i:hover {
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   border-bottom: none;
+}
+@media (max-width: 576px){
+  img{
+    width: 50%;
+  }
+}
+@media (min-width: 768px){ 
+
+}
+
+@media (min-width: 992px){
+
+}
+@media (min-width: 1200px){
+
 }
 </style>
