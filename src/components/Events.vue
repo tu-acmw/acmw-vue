@@ -1,56 +1,8 @@
-    <section id="events" style="padding-top:0; padding-bottom: 0;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7 col-md-offset-1 calendar-fix">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p class="lead heading-event">Upcoming Events</p>
-                        </div>
-                        <div class="col-md-6">
-                            <a target="_blank" href="https://calendar.google.com/calendar/b/1?cid=dHVhY213QGdtYWlsLmNvbQ"
-                                class="btn btn-white" style="margin-top: 25px;">Add to Google Calendar</a>
-                        </div>
-                    </div>
-                    <div style="overflow-x:auto;">
-                        <table class="table table-hover rounded">
-                            <tr style="color: #5cb59b">
-                                <th>Date</th>
-                                <th>Meeting</th>
-                                <th>Location</th>
-                                <th>Time</th>
-                            </tr>
-                            <tr>
-                                <td>TBD</td>
-                                <td>First General Body Meeting</td>
-                                <td>TBD</td>
-                                <td>5PM - 6PM</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <p class="lead heading-event">Hackathons</p>
-                    <div class="row center">
-                        <div class="col-md-11 col-sm-6 no-padding">
-                            <div class="page-content-mini rounded margin-bottom">
-                                <h4><a class="lead-h heading-color" href="http://2019f.pennapps.com">PennApps XX</a></h4>
-                                <div class="text-md">
-                                    <p><i class="fa fa-calendar"></i> Sept 6-8th</p>
-                                    <p><i class="fa fa-map-marker"></i><a target="__blank" href="https://goo.gl/maps/CEeVabjmuzyxusqj9"> Penn Engineering Quad</a></p>
-                                    <p><i class="fa fa-globe"></i> <a target="_blank" href="http://2019f.pennapps.com"> Website</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a href="2018_events.html" class="btn btn-white">Past Events</a>
-        </div>
-    </section>
+
 <template>
   <section id="events">
     <div class="jumbotron">
-      <div class="container">
+      <div class="col-md-12">
         <div class="title">
           <h2>{{ title }}</h2>
         </div>
@@ -82,13 +34,15 @@
               <h4><a :href="hackathon.website">{{ hackathon.name }}</a></h4>
               <div class="text-md">
                   <p><i class="fa fa-calendar"></i> {{ hackathon.date }}</p>
-                  <p><i class="fa fa-map-marker"></i><a target="__blank" :href="hackathon.googlemapslink"> {{ hackathon.location }}</a></p>
-                  <p><i class="fa fa-globe"></i> <a target="_blank" :href="hackathon.website"> Website</a></p>
+                  <p><a target="__blank" :href="hackathon.googlemapslink"><i class="fa fa-map-marker"></i> {{ hackathon.location }}</a></p>
+                  <p><a target="_blank" :href="hackathon.website"><i class="fa fa-globe"></i> Website</a></p>
               </div>
             </div>
           </div>
         </div>
-      </div>
+        <div>
+          <a class="btn" :href="pastevents.link">{{ pastevents.btntext }}</a>
+        </div>
       </div>
     </div>
   </section> 
@@ -99,7 +53,7 @@ export default {
   data () {
     return{
       title: 'Events',
-      subtitle: "Upcoming Meetings",
+      subtitle: "Meetings",
       subtitle2: "Hackathons",
       btn: { text: 'Add to Google Calendar', class:'btn', link: 'https://calendar.google.com/calendar/b/1?cid=dHVhY213QGdtYWlsLmNvbQ'},
       ths: ["Date", "Time", "Location", "Meeting"],
@@ -112,8 +66,8 @@ export default {
       hackathons: [
         { name: 'PennApps XX', website: 'http://2019f.pennapps.com', date: 'Sept 6-8th', location: 'Penn Engineering Quad', googlemapslink: 'https://goo.gl/maps/G2ydzvKD52qaG78d8'},
         { name: 'Technica 2019', website: 'https://gotechnica.org', date: 'Nov 9-10th', location: 'College Park, Maryland', googlemapslink: 'https://goo.gl/maps/JboRbapTP8krxPrX6'}
-
-      ]
+      ],
+      pastevents: { btntext: 'Past Events', link: '/pastevents'}
     }
   }
 }
@@ -121,20 +75,7 @@ export default {
 
 <style scoped>
 .jumbotron{
-  height: 100%; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background: #2c2c2c;
-  height: 100%;
-  margin: 2%;
-  position: relative;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-}
-.container{
-  display: inline-block;
+  background: transparent;
 }
 .grid{
   display: grid;
@@ -146,12 +87,17 @@ export default {
   justify-content: space-evenly;
   align-content: center;
 }
+h3{
+  color: #d7d5d9;
+}
 .title{
   text-align: center;
 }
 .btn{
   margin-bottom: 2%;
-  background: #802225;
+  background: #232323;
+  color: #d7d5d9;
+  float: right;
 }
 .btn:hover, .btn:focus{
   background:#5cb59b;
@@ -172,7 +118,6 @@ a:hover{
 }
 .table-container{
   border-radius: 20px;
-
 }
 table {
   background-color: #232323;
@@ -191,20 +136,30 @@ tr:hover td, tr:hover th {
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-
 table, th, td {
-  border: 1px solid #3d3d3d; 
+  border: 1px solid #3d3d3d;
 }
 .hackathon-container{
   background: #232323;
   margin: 10px;
   padding: 5%;
-  border-radius: 10px;
-  color: #5cb59b;;
+  border-radius: 5px;
+  color: #5cb59b;
+  text-align: center;
 }
 @media (max-width: 768px){ 
+  .jumbotron{
+    margin-bottom: 10%;
+  }
   .grid{
     display: block;
   }
+  tr, th{
+    font-size: 8pt;
+  }
+  .btn{
+    width: 50%;
+  }
+  
 }
 </style>

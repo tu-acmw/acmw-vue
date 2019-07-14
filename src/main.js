@@ -4,6 +4,7 @@ import 'mutationobserver-shim'
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue';
 import App from './App';
+import Navbar from './components/Navbar';
 import BootstrapVue from 'bootstrap-vue';
 import 'bootstrap';
 
@@ -18,4 +19,9 @@ new Vue({
   el: '#app',
   components: { App },
   template: '<App/>'
+});
+new Vue({
+  el: '#navbar',
+  components: { Navbar },
+  template: '<navbar/>'
 });

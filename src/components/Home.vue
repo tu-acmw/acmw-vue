@@ -33,27 +33,20 @@ body, html {
 }
 
 .main-jumbotron{
-  height: 100%; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   background: #2c2c2c;
-  height: 100%;
-  margin: 0;
+  padding-top: 12%;
   position: relative;
+  min-height: 100vh;
+  margin: 0;
 }
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  padding-bottom: 80px;
 }
 img{
-  padding-top: 200px;
-  margin-right: auto;
-  margin-left: auto;
-  height: 100%;
+  margin: auto;
 }
 i{
   margin: 10px;
@@ -70,17 +63,7 @@ a:focus, a:hover, i:focus, i:hover {
 }
 @media (max-width: 576px){
   img{
-    width: 50%;
+    padding-top: 17%;
   }
-}
-@media (min-width: 768px){ 
-
-}
-
-@media (min-width: 992px){
-
-}
-@media (min-width: 1200px){
-
 }
 </style>

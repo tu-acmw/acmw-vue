@@ -36,18 +36,11 @@ export default {
 </script>
 
 <style scoped>
-body, html {
-  height: 100%;
-}
-
 .jumbotron{
-  height: 100%; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 94%;
   background: #2c2c2c;
-  height: 100%;
-  margin: 2%;
+  margin: 3%;
+  padding: 3%;
   position: relative;
 }
 .grid{
@@ -63,7 +56,7 @@ p{
 }
 i{
   margin: 10px;
-  font-size: 24pt;
+  font-size: 18pt;
   color: #d7d5d9;
 }
 @media (max-width: 576px){

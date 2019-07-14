@@ -1,0 +1,108 @@
+<template>
+  <section id="faq">
+    <div class="jumbotron">
+      <h2>{{ header }}</h2>
+        <div class="panel-group faqgrid" id="faqAccordion">
+          <div v-for="question in questions" :class="question.num">
+            <div class="panel panel-default">
+              <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" :data-target="question.target">
+                <p>
+                  <i class="far fa-hand-pointer"></i>
+                  {{ question.q }}
+                </p>
+              </div>
+            <div :id="question.num" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p>
+                  {{ question.a }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+<script>
+
+
+export default {
+  name: 'Faq',
+  data () {
+    return{
+      header: 'FAQ',
+      questions: [
+        { num: 'one', target: '#one', q: 'How do I join?', a: 'You can sign up to our mailing list and introduce yourself at our next meeting.'},
+        { num: 'two', target: '#two', q: 'Is membership free?', a: 'Yes'},
+        { num: 'three', target: '#three', q: 'When/Where are your meetings?', a: 'In the Student Education and Research Center (SERC) Rm 358 every Monday* from 3-4PM excluding holidays & breaks, unless stated otherwise.'},
+        { num: 'four', target: '#four',  q: 'Can guys join too?', a: 'Yes. ACM-W is an organization centered around women in technology, but is not limited to only women.'},
+        { num: 'five', target: '#five', q: "What's your relationship with ACM?", a: 'ACM and ACM-W are student chapters of the national Association of Computing Machinery. ACM-W focuses on women in computing, while ACM focuses on computing as a whole. We encourage membership in both organizations because of the unique experience each offers.'},    
+        { num: 'six', target: '#six', q: 'How can I leave feedback/suggestions?', a: 'You can send us feedback/suggestions here.'}
+  
+      ]
+    }  
+  },
+  methods (){
+  }
+}
+</script>
+
+<style scoped>
+
+.jumbotron{
+  background: none;
+}
+h2{
+  text-align: center;
+}
+.panel {
+  background: #232323;
+  border: 0;
+  border-radius: 5px;
+  color: #d7d5d9;
+  margin-bottom: 0.5%;
+  cursor: pointer;
+}
+.panel:hover{
+  border: 0;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.panel-heading{
+  padding: 1%;
+  padding-left: 2%;
+}
+.panel-body {
+  border: 1px solid transparent;
+  border-top-color: #5cb59b;
+  padding: 1.5%; 
+  background: #2c2c2c
+  }
+
+.panel-default > .panel-footer + .panel-collapse .panel-body {
+  border-bottom-color: #666666; }
+
+.panel-primary {
+  border-color: #3ba3c3; }
+
+.panel-primary > .panel-heading {
+  color: #ffffff;
+  background-color: #3ba3c3;
+  border-color: #3ba3c3; }
+
+.panel-primary > .panel-heading + .panel-collapse .panel-body {
+  border-top-color: #3ba3c3; }
+
+.panel-primary > .panel-footer + .panel-collapse .panel-body {
+  border-bottom-color: #3ba3c3; }
+
+.panel-primary .panel-title {
+  font-weight: 300; }
+
+.panel-primary .panel-title a:hover {
+  color: #fff;
+  text-decoration: none; }
+
+</style>
