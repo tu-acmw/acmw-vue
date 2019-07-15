@@ -1,7 +1,7 @@
 <template>
   <section id="signup" class="jumbotron">
-    <div class="row col-md-12"><h2>{{ header }}</h2></div>
-    <div class="row col-md-12"><p>{{ description }}</p></div>
+    <div class="row text-center"><h2>{{ header }}</h2></div>
+    <div class="row text-center"><p>{{ description }}</p></div>
     <div class="row">
       <form action="https://github.us12.list-manage.com/subscribe/post?u=8bbe6958c201ba15d37df8174&amp;id=6f7f97b746"
         method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
@@ -38,7 +38,7 @@ export default {
   name: 'Signup',
   data () {
     return{
-      header: 'Sign Up',
+      header: 'Subscribe',
       description: 'Get news & updates from us!',
 
     }  
@@ -50,10 +50,10 @@ export default {
 
 <style scoped>
 .jumbotron{
-  width: 94%;
+  width: 100%;
   background: #2c2c2c;
-  margin: 3%;
-  padding: 3%;
+  margin: 0;
+  padding: 5%;
   position: relative;
 }
 .row{

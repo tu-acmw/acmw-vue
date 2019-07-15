@@ -13,7 +13,7 @@
               <h3>{{ subtitle }}</h3>
               <a target="_blank" :class="btn.class" :href="btn.link">{{ btn.text }}</a>
             </div>
-            <table class="table table-hover rounded">
+            <table class="table table-hover rounded  show-on-scroll magic-text-right">
               <tr>
                 <th v-for="th in ths">{{ th }}</th>
               </tr>
@@ -30,7 +30,7 @@
             <div class="subtitle">
               <h3>{{ subtitle2 }}</h3>
             </div>
-            <div v-for="hackathon in hackathons" class="hackathon-container">
+            <div v-for="hackathon in hackathons" class="hackathon-container show-on-scroll magic-text-left">
               <h4><a :href="hackathon.website">{{ hackathon.name }}</a></h4>
               <div class="text-md">
                   <p><i class="fa fa-calendar"></i> {{ hackathon.date }}</p>
@@ -95,7 +95,7 @@ h3{
 }
 .btn{
   margin-bottom: 2%;
-  background: #232323;
+  background: #3ba3c3;
   color: #d7d5d9;
   float: right;
 }
@@ -111,7 +111,7 @@ a{
   text-decoration: none;
 }
 a:hover{
-  color: #802225;
+  color: #3ba3c3;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;

@@ -1,5 +1,5 @@
 <template>
-  <div id="about" class="jumbotron">
+  <div id="about" class="jumbotron show-on-scroll magic-text">
     <div class="grid">
       <div class="col-md-12"><h2>{{ header }}</h2></div>
       <div class="col-md-12"><p>{{ description }}</p></div>

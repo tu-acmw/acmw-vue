@@ -1,14 +1,12 @@
 <template>
-  <section id="board" class="jumbotron">
+  <section id="board" class="jumbotron  show-on-scroll magic-text">
     <div class="container">
-      <div class="row col-md-12"><h2>{{ header }}</h2></div>
+      <div class="text-center"><h2>{{ header }}</h2></div>
         <div class="row center">
           <div v-for="member in members" >
-            <div class="col-lg-3">
-              <img class="img-responsive lazy" :src="member.img" alt="picture of member">
-              <h4 class="heading-color">{{ member.name }}</h4>
-              <a target="_blank" :href="member.linkedin">{{ member.position }} <i class="fa fa-linkedin"></i></a>
-            </div>
+            <img class="img-responsive lazy text-center" :src="member.img" alt="">
+            <h4 class="text-center">{{ member.name }}</h4>
+            <p class="text-center"><a target="_blank" :href="member.linkedin">{{ member.position }} <i class="fab fa-linkedin"></i></a></p>
           </div>
         </div>
       </div>
@@ -52,19 +50,27 @@ export default {
   padding: 3%;
   position: relative;
 }
-h4{
-  color: #d7d5d9;
-}
-a{
-  color: #5cb59b;
-}
-a:hover{
-  text-decoration: none;
-  color: #d7d5d9;
+.center{
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
 }
 img{
   width: 200px;
   border-radius: 50%;
+}
+h4{
+  color: #d7d5d9;
+}
+a{
+  color: #3ba3c3;
+}
+a:hover{
+  text-decoration: none;
+  color: #d7d5d9;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 .row{
   display: flex;
