@@ -1,15 +1,13 @@
 import '@babel/polyfill'
 import 'mutationobserver-shim'
-// The Vue build version to load with the `import` command
-// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue';
 import App from './App';
 import Navbar from './components/Navbar';
+import Blog from './components/Blog';
 import BootstrapVue from 'bootstrap-vue';
 import 'bootstrap';
 
 Vue.use(BootstrapVue);
-
 Vue.config.productionTip = false
 
 
@@ -24,4 +22,10 @@ new Vue({
   el: '#navbar',
   components: { Navbar },
   template: '<navbar/>'
+});
+new Vue({
+  path: '/blog',
+  el: '#blog',
+  components: { Blog },
+  template: '<blog/>'
 });

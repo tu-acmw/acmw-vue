@@ -24,9 +24,9 @@ export default {
         {text: 'Events', link: '#events'},
         {text: 'FAQ', link: '#faq'},
         {text: 'Subscribe', link: '#signup'},
-        {text: 'Blog', link: 'blog.html'},
+        //{text: 'Blog', link: 'blog'},
         {text: 'Feedback', link: 'https://goo.gl/forms/AeBk6ST8iEqxRUvL2'},
-        {text: 'Contact', link: 'mailto:tuacmw@gmail.com'},
+        {text: 'Contact', link: 'mailto:tuacmw@gmail.com'}
       ]
     }
   }

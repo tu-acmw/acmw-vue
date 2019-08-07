@@ -55,6 +55,7 @@ export default {
 }
 h2{
   text-align: center;
+  color: #ffdb76;
 }
 .panel {
   background: #232323;
@@ -72,7 +73,7 @@ h2{
 }
 .panel-heading{
   padding: 1%;
-  padding-left: 2%;
+  padding-left: 4%;
 }
 .panel-body {
   border: 1px solid transparent;

@@ -11,9 +11,9 @@
           <div>
             <div class="subtitle">
               <h3>{{ subtitle }}</h3>
-              <a target="_blank" :class="btn.class" :href="btn.link">{{ btn.text }}</a>
+              <a target="_blank" :class="btn.class" class="show-on-scroll magic-text-right" :href="btn.link">{{ btn.text }}</a>
             </div>
-            <table class="table table-hover rounded  show-on-scroll magic-text-right">
+            <table class="table table-hover rounded show-on-scroll magic-text-right">
               <tr>
                 <th v-for="th in ths">{{ th }}</th>
               </tr>
@@ -41,7 +41,7 @@
           </div>
         </div>
         <div>
-          <a class="btn" :href="pastevents.link">{{ pastevents.btntext }}</a>
+          <a class="btn show-on-scroll magic-text" :href="pastevents.link">{{ pastevents.btntext }}</a>
         </div>
       </div>
     </div>
@@ -86,6 +86,9 @@ export default {
   display: flex;
   justify-content: space-evenly;
   align-content: center;
+}
+h2{
+  color: #ffdb76;
 }
 h3{
   color: #d7d5d9;
@@ -153,9 +156,6 @@ table, th, td {
   }
   .grid{
     display: block;
-  }
-  tr, th{
-    font-size: 8pt;
   }
   .btn{
     width: 50%;
