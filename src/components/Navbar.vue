@@ -22,6 +22,7 @@ export default {
       navs: [
         {text: 'About', link: '#about'},
         {text: 'Events', link: '#events'},
+        {text: 'Board', link: '#board'},
         {text: 'FAQ', link: '#faq'},
         {text: 'Subscribe', link: '#signup'},
         //{text: 'Blog', link: 'blog'},
