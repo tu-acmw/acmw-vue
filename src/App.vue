@@ -45,6 +45,30 @@ h1, h2, h3, h4{
 h3, h4{
   font-size: 18pt;
 }
+a{
+  color: #d7d5d9;
+  text-decoration: none;
+}
+a:hover{
+  color: #3ba3c3;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.btn{
+  margin-bottom: 2%;
+  background: #3ba3c3;
+  color: #d7d5d9;
+  float: right;
+}
+.btn:hover, .btn:focus{
+  background:#3ba3c3a1;
+  color: #d7d5d9;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
 .no-show{
   height: 5vh;
 }

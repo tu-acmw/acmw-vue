@@ -1,10 +1,35 @@
 
 <template>
   <section id="events">
+    <div class="no-show"></div>
     <div class="jumbotron">
       <div class="col-md-12">
         <div class="title">
           <h2>{{ title }}</h2>
+        </div>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Carousel indicators 
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+          </ol>
+          -->
+          <!-- Wrapper for carousel items -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img :src="eventPic1">
+            </div>
+            <div class="carousel-item">
+              <img :src="eventPic2" alt="Second Slide">
+            </div>
+          </div>
+          <!-- Carousel controls -->
+          <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
         </div>
         <div class="grid">
           <!--Upcoming Events-->
@@ -58,16 +83,17 @@ export default {
       btn: { text: 'Add to Google Calendar', class:'btn', link: 'https://calendar.google.com/calendar/b/1?cid=dHVhY213QGdtYWlsLmNvbQ'},
       ths: ["Date", "Time", "Location", "Meeting"],
       trs: [
-        { date: 'TBD', time: '3-4PM', location: 'TBD', meeting: 'First General Body Meeting'},
-        { date: 'TBD', time: '3-4PM', location: 'TBD', meeting: 'Second General Body Meeting'},
-        { date: 'TBD', time: '3-4PM', location: 'TBD', meeting: 'Third General Body Meeting'},
-        { date: 'TBD', time: '3-4PM', location: 'TBD', meeting: 'Fourth General Body Meeting'}
+        { date: '9/16/19', time: '3-8PM', location: 'Howard Gittis Student Center', meeting: 'Game Night'},
+        { date: '9/23/19', time: '3-4PM', location: 'SERC 358', meeting: 'General Body Meeting'},
+        { date: '9/30/19', time: '3-4PM', location: 'SERC 358', meeting: 'General Body Meeting'}
       ],
       hackathons: [
         { name: 'PennApps XX', website: 'http://2019f.pennapps.com', date: 'Sept 6-8th', location: 'Penn Engineering Quad', googlemapslink: 'https://goo.gl/maps/G2ydzvKD52qaG78d8'},
         { name: 'Technica 2019', website: 'https://gotechnica.org', date: 'Nov 9-10th', location: 'College Park, Maryland', googlemapslink: 'https://goo.gl/maps/JboRbapTP8krxPrX6'}
-      ],
-      pastevents: { btntext: 'Past Events', link: '/pastevents'}
+      ], 
+      pastevents: { btntext: 'Past Events', link: '/pastevents'},
+      eventPic1: require('@/assets/events/fall_2019/9.16.19_game_night.png'),
+      eventPic2: require('@/assets/events/fall_2019/codeLinc.jpg')
     }
   }
 }
@@ -87,37 +113,11 @@ export default {
   justify-content: space-evenly;
   align-content: center;
 }
-h2{
-  color: #ffdb76;
-}
-h3{
+h2, h3{
   color: #d7d5d9;
 }
 .title{
   text-align: center;
-}
-.btn{
-  margin-bottom: 2%;
-  background: #3ba3c3;
-  color: #d7d5d9;
-  float: right;
-}
-.btn:hover, .btn:focus{
-  background:#5cb59b;
-  color: #d7d5d9;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-}
-a{
-  color: #d7d5d9;
-  text-decoration: none;
-}
-a:hover{
-  color: #3ba3c3;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
 }
 .table-container{
   border-radius: 20px;
@@ -148,6 +148,21 @@ table, th, td {
   padding: 5%;
   border-radius: 5px;
   color: #5cb59b;
+  text-align: center;
+}
+img{
+  width: 45vh;
+}
+#myCarousel{
+  margin-left: auto;
+  margin-right: auto;
+  width: 60vh;
+}
+.carousel{
+  background: none;
+  margin-bottom: 5vh;
+}
+.carousel-item{
   text-align: center;
 }
 @media (max-width: 768px){ 
