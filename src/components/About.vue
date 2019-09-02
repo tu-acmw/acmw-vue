@@ -1,10 +1,11 @@
 <template>
-  <div id="about" class="jumbotron show-on-scroll magic-text">
-    <div class="grid">
+  <div id="about">
+    <div class="no-show"></div>
+    <div class="jumbotron show-on-scroll magic-text">
       <div class="col-md-12"><h2>{{ header }}</h2></div>
       <div class="col-md-12"><p>{{ description }}</p></div>
-      <div class="row center">
-        <div class="col-sm-6 col-md-3" v-for="value in values">
+      <div class="grid">
+        <div v-for="value in values">
           <i class="fa" :class="value.icon"></i>
           <h3>{{ value.header }}</h3>
           <p>{{ value.description }}</p>
@@ -37,16 +38,18 @@ export default {
 
 <style scoped>
 .jumbotron{
-  width: 94%;
+  width: 90%;
   background: #2c2c2c;
-  margin: 3%;
+  margin: 1% 5%;
   padding: 3%;
   position: relative;
+  text-align: center;
 }
 .grid{
   display: inline-grid;
-  grid-template-rows: auto auto auto;
-  text-align: center;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3%;
 }
 .container{
   display: inline-block;

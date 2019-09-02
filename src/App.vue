@@ -45,7 +45,9 @@ h1, h2, h3, h4{
 h3, h4{
   font-size: 18pt;
 }
-
+.no-show{
+  height: 5vh;
+}
 @media (max-width: 768px){ 
   h1, h2, h3, h4{
     color: #5cb59b;
