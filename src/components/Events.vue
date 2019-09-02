@@ -89,7 +89,7 @@ export default {
       ],
       hackathons: [
         { name: 'PennApps XX', website: 'http://2019f.pennapps.com', date: 'Sept 6-8th', location: 'Penn Engineering Quad', googlemapslink: 'https://goo.gl/maps/G2ydzvKD52qaG78d8'},
-        { name: 'Technica 2019', website: 'https://gotechnica.org', date: 'Nov 9-10th', location: 'College Park, Maryland', googlemapslink: 'https://goo.gl/maps/JboRbapTP8krxPrX6'}
+        { name: 'codeLinc', website: 'https://www.lfg.com/public/aboutus/companyoverview/corporateresponsibility/codelinc?fbclid=IwAR2WPsRsT-zTG3w34DlK6LenAdoVVKFqMx0yRaURVYI3xm4aR-g5rofTH50', date: 'Sept 27-29th', location: 'Lincoln Financial Greensboro Office', googlemapslink: 'https://www.google.com/maps/place/100+N+Greene+St,+Greensboro,+NC+27401/@36.0728375,-79.7930303,17z/data=!3m1!4b1!4m5!3m4!1s0x885319242e811ba5:0xc2fa6e54a99b67f2!8m2!3d36.0728375!4d-79.7908416?shorturl=1'}
       ], 
       pastevents: { btntext: 'Past Events', link: '/pastevents'},
       eventPic1: require('@/assets/events/fall_2019/9.16.19_game_night.png'),

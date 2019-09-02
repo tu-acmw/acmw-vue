@@ -31,11 +31,13 @@ export default {
 
 <style>
 html{
-  height: 100%;
+
 }
 #app {
+  width: 100%;
   background: #802225;
   font-size: 14pt;
+  overflow: hidden;
 }
 h1, h2, h3, h4{
   color: #5cb59b;
@@ -46,15 +48,15 @@ h3, h4{
   font-size: 18pt;
 }
 a{
-  color: #d7d5d9;
+  color: #3ba3c3;
   text-decoration: none;
 }
 a:hover{
-  color: #3ba3c3;
+  color: #3ba3c3a1;
   text-decoration: none;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 .btn{
   margin-bottom: 2%;
@@ -65,9 +67,9 @@ a:hover{
 .btn:hover, .btn:focus{
   background:#3ba3c3a1;
   color: #d7d5d9;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 .no-show{
   height: 5vh;

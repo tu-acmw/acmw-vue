@@ -1,5 +1,6 @@
 <template>
   <section id="faq">
+    <div class="no-show"></div>
     <div class="jumbotron">
       <h2>{{ header }}</h2>
         <div class="panel-group faqgrid" id="faqAccordion">
@@ -13,9 +14,7 @@
               </div>
             <div :id="question.num" class="panel-collapse collapse">
               <div class="panel-body">
-                <p>
-                  {{ question.a }}
-                </p>
+                <p v-html="question.a"></p>
               </div>
             </div>
           </div>
@@ -33,12 +32,12 @@ export default {
     return{
       header: 'FAQ',
       questions: [
-        { num: 'one', target: '#one', q: 'How do I join?', a: 'You can sign up to our mailing list and introduce yourself at our next meeting.'},
-        { num: 'two', target: '#two', q: 'Is membership free?', a: 'Yes'},
-        { num: 'three', target: '#three', q: 'When/Where are your meetings?', a: 'In the Student Education and Research Center (SERC) Rm 358 every Monday* from 3-4PM excluding holidays & breaks, unless stated otherwise.'},
+        { num: 'one', target: '#one', q: 'How do I join?', a: 'You can sign up to <a href="#signup">our mailing list</a> and introduce yourself at our next meeting.'},
+        { num: 'two', target: '#two', q: 'Is membership free?', a: 'Yes!'},
+        { num: 'three', target: '#three', q: 'Where/When are your meetings?', a: 'In the Student Education and Research Center (SERC) Rm 358 every Monday* from 3-4PM excluding holidays & breaks, unless stated otherwise.'},
         { num: 'four', target: '#four',  q: 'Can guys join too?', a: 'Yes. ACM-W is an organization centered around women in technology, but is not limited to only women.'},
         { num: 'five', target: '#five', q: "What's your relationship with ACM?", a: 'ACM and ACM-W are student chapters of the national Association of Computing Machinery. ACM-W focuses on women in computing, while ACM focuses on computing as a whole. We encourage membership in both organizations because of the unique experience each offers.'},    
-        { num: 'six', target: '#six', q: 'How can I leave feedback/suggestions?', a: 'You can send us feedback/suggestions here.'}
+        { num: 'six', target: '#six', q: 'How can I leave feedback/suggestions?', a: 'You can send us feedback/suggestions on <a href="https://goo.gl/forms/AeBk6ST8iEqxRUvL2">our feedback form</a>.'}
   
       ]
     }  
@@ -52,10 +51,11 @@ export default {
 
 .jumbotron{
   background: none;
+  margin: 0 5%;
 }
 h2{
   text-align: center;
-  color: #ffdb76;
+  color: #d7d5d9;
 }
 .panel {
   background: #232323;
@@ -105,5 +105,14 @@ h2{
 .panel-primary .panel-title a:hover {
   color: #fff;
   text-decoration: none; }
-
+@media (max-width: 576px){
+  .jumbotron{ 
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+  .grid{
+    display: block;
+  }
+}
 </style>

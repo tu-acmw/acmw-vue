@@ -28,7 +28,7 @@
         </div>
       </form>
     </div>
-    </div>
+    <footer v-html="footer"></footer>
   </section>
 </template>
 <script>
@@ -40,6 +40,7 @@ export default {
     return{
       header: 'Subscribe',
       description: 'Get news & updates from us!',
+      footer: 'Made with <i class="fa fa-heart"></i> by <a href="https://github.com/chiuannica">Annica</a> and formerly <a href="https://github.com/hanaxu">Hana</a>'
 
     }  
   },
@@ -53,7 +54,7 @@ export default {
   width: 100%;
   background: #2c2c2c;
   margin: 0;
-  padding: 5%;
+  padding-top: 3%;
   position: relative;
 }
 .row{
@@ -65,23 +66,16 @@ export default {
 p{
   color: #d7d5d9;
 }
-
-#signUpSubmit {
-  background-color: #5cb59b;
-  color: #d1d1d1;
-  -webkit-transition-duration: 0.4s;
-  /* Safari */
-  transition-duration: 0.4s; }
-
-#signUpSubmit:hover,
-#signUpSubmit:focus .fa-power-off {
-  color: #5cb59b; 
-  background: #802225;
+footer{
+  font-size: 0.5em;
+  color: #d7d5d9;
+  text-align: center;
+  margin: 3%;
 }
 
 .form-control {
-  color: #ffdb76;
-  background: #802225;
+  color: #2c2c2c;
+  background: #d7d5d9;
   border: 1px solid #5cb59b;
   margin-bottom: 1%;
   border-radius: 5px;

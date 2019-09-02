@@ -63,6 +63,11 @@ i{
   color: #d7d5d9;
 }
 @media (max-width: 576px){
+  .jumbotron{ 
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
   .grid{
     display: block;
   }
