@@ -34,9 +34,8 @@ body, html {
 
 .main-jumbotron{
   background: #2c2c2c;
-  padding-top: 12%;
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
   margin: 0;
 }
 .container {
@@ -46,10 +45,12 @@ body, html {
   position: relative;
 }
 img{
+  width: 50%;
   margin: auto;
+  margin-top: 10vh;
 }
 i{
-  margin: 10px;
+  margin: 2vh;
   font-size: 24pt;
   color: #d7d5d9;
 }
@@ -63,7 +64,8 @@ a:focus, a:hover, i:focus, i:hover {
 }
 @media (max-width: 576px){
   img{
-    padding-top: 17%;
+    width: 100%;
+    margin-top: 20vh;
   }
 }
 </style>
