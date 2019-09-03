@@ -21,10 +21,10 @@
         </div>
         <div class="row">
           <input id="emailText" name="EMAIL" type="text" placeholder="Email address" class="form-control">
-            <span class="input-group-btn">
-              <button id="signUpSubmit" type="submit" class="btn">Submit <i class="fa fa-power-off"></i></button>
-            </span>
-          </div>
+        </div>
+        <div class="row">
+          <button id="signUpSubmit" type="submit" class="btn">Submit <i class="fa fa-power-off"></i></button>
+        </div>
         </div>
       </form>
     </div>
@@ -61,7 +61,6 @@ export default {
   display: flex;
   justify-content: center;
   align-content: center;
-
 }
 p{
   color: #d7d5d9;
@@ -72,7 +71,6 @@ footer{
   text-align: center;
   margin: 3%;
 }
-
 .form-control {
   color: #2c2c2c;
   background: #d7d5d9;
@@ -84,17 +82,20 @@ footer{
 }
 
 .form-control::-moz-placeholder {
-  color: #999999;
+  color: #3ba3c3c5;
   opacity: 1; }
 
 .form-control:-ms-input-placeholder {
-  color: #999999; }
+  color: #3ba3c3c5; }
 
 .form-control::-webkit-input-placeholder {
-  color: #d7d5d9;
+  color: #3ba3c3c5;
   /* placeholder text color */ }
-
-.form-group {
-  margin-bottom: 5px; }
-
+@media (max-width: 576px){
+  .form-control{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 </style>

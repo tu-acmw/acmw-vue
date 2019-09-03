@@ -51,7 +51,7 @@ export default {
 
 .jumbotron{
   background: none;
-  margin: 0 5%;
+  margin: 5% 5%;
 }
 h2{
   text-align: center;
@@ -108,7 +108,7 @@ h2{
 @media (max-width: 576px){
   .jumbotron{ 
     width: 100%;
-    margin: 0;
+    margin: 10% 0;
     border-radius: 0;
   }
   .grid{

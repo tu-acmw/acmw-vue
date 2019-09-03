@@ -4,9 +4,7 @@
     <div class="no-show"></div>
     <div class="jumbotron">
       <div class="col-md-12">
-        <div class="title">
-          <h2>{{ title }}</h2>
-        </div>
+        <h2>{{ title }}</h2>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
           <!-- Carousel indicators 
           <ol class="carousel-indicators">
@@ -33,12 +31,12 @@
         </div>
         <div class="grid">
           <!--Upcoming Events-->
-          <div>
+          <div class="grid-item">
             <div class="subtitle">
               <h3>{{ subtitle }}</h3>
               <a target="_blank" :class="btn.class" class="show-on-scroll magic-text-right" :href="btn.link">{{ btn.text }}</a>
             </div>
-            <table class="table table-hover rounded show-on-scroll magic-text-right">
+            <table class="show-on-scroll magic-text-right">
               <tr>
                 <th v-for="th in ths">{{ th }}</th>
               </tr>
@@ -51,7 +49,7 @@
             </table>
           </div>
           <!--Hackathons-->
-          <div>
+          <div class="grid-item">
             <div class="subtitle">
               <h3>{{ subtitle2 }}</h3>
             </div>
@@ -108,6 +106,9 @@ export default {
   grid-template-columns: 2fr 1fr;
   grid-gap: 2%;
 }
+.grid-item{
+  width: 100%;
+}
 .subtitle{
   display: flex;
   justify-content: space-evenly;
@@ -115,23 +116,16 @@ export default {
 }
 h2, h3{
   color: #d7d5d9;
-}
-.title{
   text-align: center;
 }
-.table-container{
-  border-radius: 20px;
-}
-table {
+table{
+  width: 100%;
   background-color: #232323;
   color: #d7d5d9; 
 }
-th {
+th{
   text-align: center; 
   color: #5cb59b;
-}
-tr{
-  text-align: center;
 }
 tr:hover td, tr:hover th {
   background-color: #3d3d3d;
@@ -141,22 +135,26 @@ tr:hover td, tr:hover th {
 }
 table, th, td {
   border: 1px solid #3d3d3d;
+  text-align: center;
+}
+th, td{
+  padding: 3% 0;
 }
 .hackathon-container{
   background: #232323;
-  margin: 10px;
-  padding: 5%;
+  margin: 2%;
+  padding: 4%;
   border-radius: 5px;
   color: #5cb59b;
   text-align: center;
 }
 img{
-  width: 45vh;
+  width: 80%;
 }
 #myCarousel{
   margin-left: auto;
   margin-right: auto;
-  width: 60vh;
+  max-width: 60vh;
 }
 .carousel{
   background: none;
@@ -168,12 +166,15 @@ img{
 @media (max-width: 768px){ 
   .jumbotron{
     margin-bottom: 10%;
+    margin: -5%;
   }
   .grid{
     display: block;
   }
   .btn{
     width: 50%;
+  }
+  table{
   }
   
 }

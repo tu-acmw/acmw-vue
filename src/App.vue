@@ -52,7 +52,7 @@ a{
   text-decoration: none;
 }
 a:hover{
-  color: #3ba3c3a1;
+  color: #3ba3c3c5;
   text-decoration: none;
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
@@ -65,7 +65,7 @@ a:hover{
   float: right;
 }
 .btn:hover, .btn:focus{
-  background:#3ba3c3a1;
+  background:#3ba3c3c5;
   color: #d7d5d9;
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
