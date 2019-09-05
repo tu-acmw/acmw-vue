@@ -63,9 +63,11 @@
             </div>
           </div>
         </div>
+        <!--
         <div>
           <a class="btn show-on-scroll magic-text" :href="pastevents.link">{{ pastevents.btntext }}</a>
         </div>
+        -->
       </div>
     </div>
   </section> 
@@ -166,7 +168,7 @@ img{
 @media (max-width: 768px){ 
   .jumbotron{
     margin-bottom: 10%;
-    margin: -5%;
+    margin: 0 -4%;
   }
   .grid{
     display: block;
@@ -174,8 +176,5 @@ img{
   .btn{
     width: 50%;
   }
-  table{
-  }
-  
 }
 </style>

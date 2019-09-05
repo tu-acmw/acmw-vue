@@ -3,7 +3,7 @@
     <div class="no-show"></div>
     <div class="jumbotron  show-on-scroll magic-text">
       <div class="container">
-        <div class="text-center"><h2>{{ header }}</h2></div>
+        <div><h2>{{ header }}</h2></div>
           <div class="row center">
             <div class="profile" v-for="member in members">
               <img :src="member.img" alt="">
@@ -59,6 +59,9 @@ export default {
 img{
   width: 20vh;
   border-radius: 50%;
+}
+h2{
+  text-align: center;
 }
 h4{
   color: #d7d5d9;
