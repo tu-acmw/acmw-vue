@@ -45,12 +45,9 @@ nav{
   background: #232323;
 }
 a, i, .navbar-brand{
-  font-size: 10pt;
   font-weight: bold;
   letter-spacing: 0em;
   color: #d7d5d9; 
-  background: transparent;
-  text-decoration: none;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out; 

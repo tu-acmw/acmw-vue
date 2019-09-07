@@ -54,9 +54,6 @@ export default {
 .container{
   display: inline-block;
 }
-p{
-  color: #d7d5d9;
-}
 i{
   margin: 10px;
   font-size: 18pt;

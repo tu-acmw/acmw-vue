@@ -2,7 +2,7 @@
   <section id="home">
     <div class="main-jumbotron">
       <div class="container">
-          <img src="@/assets/acmw_logo.png" class="img-responsive rounded col-xs-12" alt="ACM-W's Logo, an owl on a laptop">
+        <img src="@/assets/acmw_logo.png" class="img-responsive rounded col-xs-12" alt="ACM-W's Logo, an owl on a laptop">
       </div>
       <div class="container">
           <a data-animate-hover="pulse" v-for="media in socialmedias" :href="media.link"><i class='fab' :class="media.icon"></i></a>
