@@ -4,7 +4,7 @@
     <div class="jumbotron">
       <h2>{{ header }}</h2>
         <div class="panel-group faqgrid" id="faqAccordion">
-          <div v-for="question in questions" :class="question.num" class="show-on-scroll magic-text">
+          <div v-for="question in questions" :class="question.num">
             <div class="panel panel-default">
               <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" :data-target="question.target">
                 <p>

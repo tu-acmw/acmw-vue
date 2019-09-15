@@ -1,7 +1,7 @@
 <template>
   <section id="board">
     <div class="no-show"></div>
-    <div class="jumbotron  show-on-scroll magic-text">
+    <div class="jumbotron">
       <div class="container">
         <div><h2>{{ header }}</h2></div>
           <div class="row center">
