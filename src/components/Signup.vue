@@ -2,33 +2,32 @@
   <section id="signup" class="jumbotron">
     <div class="row text-center"><h2>{{ header }}</h2></div>
     <div class="row text-center"><p>{{ description }}</p></div>
-    <div class="row">
+    <div class="sign-up-grid">
       <form action="https://github.us12.list-manage.com/subscribe/post?u=8bbe6958c201ba15d37df8174&amp;id=6f7f97b746"
         method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
         novalidate>
         <div class="input-name container">
-        <div class="row">
-          <div class="col-sm-6 col-xs-10">
-            <div class="form-group">
-              <input id="firstName" name="FNAME" type="text" placeholder="First name" class="form-control">
-            </div>
+          <div class="row">
+            <input id="firstName" name="FNAME" type="text" placeholder="First name" class="form-control">
           </div>
-          <div class="col-sm-6 col-xs-10">
-            <div class="form-group">
-              <input id="lastName" name="LNAME" type="text" placeholder="Last name" class="form-control">
-            </div>
+          <div class="row">
+            <input id="lastName" name="LNAME" type="text" placeholder="Last name" class="form-control">
           </div>
-        </div>
-        <div class="row">
-          <input id="emailText" name="EMAIL" type="text" placeholder="Email address" class="form-control">
-        </div>
-        <div class="row">
-          <button id="signUpSubmit" type="submit" class="btn">Submit <i class="fa fa-power-off"></i></button>
-        </div>
+          <div class="row">
+            <input id="emailText" name="EMAIL" type="text" placeholder="Email address" class="form-control">
+          </div>
+          <div class="row">
+            <button id="signUpSubmit" type="submit" class="btn">Submit <i class="fa fa-power-off"></i></button>
+          </div>
         </div>
       </form>
+      <div class="instagram">
+
+      </div>
     </div>
     <footer v-html="footer"></footer>
+    
+
   </section>
 </template>
 <script>
@@ -61,6 +60,10 @@ export default {
   display: flex;
   justify-content: center;
   align-content: center;
+}
+.sign-up-gird{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 p{
   color: #d7d5d9;

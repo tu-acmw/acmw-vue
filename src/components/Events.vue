@@ -38,7 +38,7 @@
               <h3>{{ subtitle }}</h3>
               <a target="_blank" :class="btn.class" class="show-on-scroll magic-text-right" :href="btn.link">{{ btn.text }}</a>
             </div>
-            <table class="show-on-scroll magic-text-right">
+            <table class="">
               <tr>
                 <th :key="th.id" v-for="th in ths">{{ th }}</th>
               </tr>

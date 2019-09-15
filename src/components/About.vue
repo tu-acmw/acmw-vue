@@ -1,7 +1,7 @@
 <template>
   <div id="about">
     <div class="no-show"></div>
-    <div class="jumbotron show-on-scroll magic-text">
+    <div class="jumbotron">
       <div class="col-md-12"><h2>{{ header }}</h2></div>
       <div class="col-md-12"><p>{{ description }}</p></div>
       <div class="grid">

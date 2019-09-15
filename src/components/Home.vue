@@ -5,7 +5,7 @@
         <img src="@/assets/acmw_logo.png" class="img-responsive rounded col-xs-12" alt="ACM-W's Logo, an owl on a laptop">
       </div>
       <div class="container">
-          <a data-animate-hover="pulse" v-for="media in socialmedias" :href="media.link"><i class='fab' :class="media.icon"></i></a>
+          <a :key="media.id" data-animate-hover="pulse" v-for="media in socialmedias" :href="media.link"><i class='fab' :class="media.icon"></i></a>
           <a data-animate-hover="pulse" href="mailto:tuacmw@gmail.com"><i class="fas fa-at"></i></a>
       </div>
     </div>
@@ -19,8 +19,8 @@ export default {
   data () {
       return{
         socialmedias: [
-          { icon: 'fa-instagram', link: 'https://www.instagram.com/tuacm_w/' },
-          { icon: 'fa-facebook-square', link: 'https://www.facebook.com/templeuniversityacmw9/' },
+          { id: 0, icon: 'fa-instagram', link: 'https://www.instagram.com/tuacm_w/' },
+          { id: 1, icon: 'fa-facebook-square', link: 'https://www.facebook.com/templeuniversityacmw9/' },
         ]
       }
   }
@@ -45,9 +45,9 @@ body, html {
   position: relative;
 }
 img{
-  width: 50%;
+  max-width: 50vh;
   margin: auto;
-  margin-top: 10vh;
+  margin-top: 20vh;
 }
 i{
   margin: 2vh;
