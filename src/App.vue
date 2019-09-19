@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Navbar></Navbar>
     <Home></Home>
     <About></About>
     <Events></Events>

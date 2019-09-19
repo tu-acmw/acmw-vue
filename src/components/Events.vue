@@ -83,7 +83,7 @@ export default {
       title: 'Events',
       subtitle: "Meetings",
       subtitle2: "Hackathons",
-      btn: { text: 'Add to Google Calendar', class:'btn', link: 'https://calendar.google.com/calendar/b/1?cid=dHVhY213QGdtYWlsLmNvbQ'},
+      btn: { text: 'Follow us for updates!', class:'btn', link: '#socialmedia'},
       ths: [ "Date", "Time", "Location", "Meeting"],
       trs: [
         { id: 0, date: '9/23/19', time: '3-4PM', location: 'SERC 358', meeting: 'Career Fair Prep'},

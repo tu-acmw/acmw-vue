@@ -46,9 +46,9 @@ export default {
 
 <style scoped>
 .jumbotron{
-  width: 90%;
+  width: 80%;
   background: #2c2c2c;
-  margin: 5%;
+  margin: 0 10%;
   padding: 5%;
 }
 .profile{

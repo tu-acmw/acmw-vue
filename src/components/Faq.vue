@@ -51,7 +51,7 @@ export default {
 
 .jumbotron{
   background: none;
-  margin: 5% 5%;
+  margin: 0 10%;
 }
 h2{
   text-align: center;
