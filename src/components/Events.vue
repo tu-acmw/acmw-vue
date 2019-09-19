@@ -36,7 +36,7 @@
           <div class="grid-item">
             <div class="subtitle">
               <h3>{{ subtitle }}</h3>
-              <a target="_blank" :class="btn.class" class="show-on-scroll magic-text-right" :href="btn.link">{{ btn.text }}</a>
+              <a target="_blank" :class="btn.class" class="" :href="btn.link">{{ btn.text }}</a>
             </div>
             <table class="">
               <tr>
@@ -55,7 +55,7 @@
             <div class="subtitle">
               <h3>{{ subtitle2 }}</h3>
             </div>
-            <div :key="hackathon.id" v-for="hackathon in hackathons" class="hackathon-container show-on-scroll magic-text-left">
+            <div :key="hackathon.id" v-for="hackathon in hackathons" class="hackathon-container">
               <h4><a :href="hackathon.website">{{ hackathon.name }}</a></h4>
               <div class="text-md">
                   <p><i class="fa fa-calendar"></i> {{ hackathon.date }}</p>
@@ -86,17 +86,16 @@ export default {
       btn: { text: 'Add to Google Calendar', class:'btn', link: 'https://calendar.google.com/calendar/b/1?cid=dHVhY213QGdtYWlsLmNvbQ'},
       ths: [ "Date", "Time", "Location", "Meeting"],
       trs: [
-        { id: 0, date: '9/16/19', time: '3-8PM', location: 'Howard Gittis Student Center', meeting: 'Game Night'},
-        { id: 1, date: '9/23/19', time: '3-4PM', location: 'SERC 358', meeting: 'General Body Meeting'},
-        { id: 2, date: '9/30/19', time: '3-4PM', location: 'SERC 358', meeting: 'General Body Meeting'}
+        { id: 0, date: '9/23/19', time: '3-4PM', location: 'SERC 358', meeting: 'Career Fair Prep'},
+        { id: 1, date: '9/30/19', time: '3-4PM', location: 'SERC 358', meeting: 'General Body Meeting'}
       ],
       hackathons: [
         { id: 0, name: 'codeLinc', website: 'https://www.lfg.com/public/aboutus/companyoverview/corporateresponsibility/codelinc?fbclid=IwAR2WPsRsT-zTG3w34DlK6LenAdoVVKFqMx0yRaURVYI3xm4aR-g5rofTH50', date: 'Sept 27-29th', location: 'Lincoln Financial Greensboro Office', googlemapslink: 'https://www.google.com/maps/place/100+N+Greene+St,+Greensboro,+NC+27401/@36.0728375,-79.7930303,17z/data=!3m1!4b1!4m5!3m4!1s0x885319242e811ba5:0xc2fa6e54a99b67f2!8m2!3d36.0728375!4d-79.7908416?shorturl=1', register: 'https://form.jotform.com/92254483567163' }
       ], 
       pastevents: { btntext: 'Past Events', link: '/pastevents'},
-      eventPic1: require('@/assets/events/fall_2019/9.16.19_game_night.png'),
+      eventPic1: require('@/assets/events/fall_2019/9.23.19_career_fair.png'),
       eventPic2: require('@/assets/events/fall_2019/codeLinc.jpg'),
-      event1Desc: 'Come out to our first meeting!',
+      event1Desc: 'Learn tips and get your resume reviewed in time for the career fair!',
       event2Desc: '<a href="https://form.jotform.com/92254483567163">Click to fill out the official registration form</a>'
     }
   }
