@@ -59,13 +59,12 @@
               <h4><a :href="hackathon.website">{{ hackathon.name }}</a></h4>
               <div class="text-md">
                   <p><i class="fa fa-calendar"></i> {{ hackathon.date }}</p>
-                  <p><a target="__blank" :href="hackathon.googlemapslink"><i class="fa fa-map-marker"></i> {{ hackathon.location }}</a></p>
                   <p><a target="_blank" :href="hackathon.website"><i class="fa fa-globe"></i> Website</a></p>
-                  <p><a target="_blank" :href="hackathon.register"><i class="fa fa-pencil"></i> Register</a></p>
               </div>
             </div>
           </div>
         </div>
+        
         <!--
         <div>
           <a class="btn show-on-scroll magic-text" :href="pastevents.link">{{ pastevents.btntext }}</a>
@@ -76,6 +75,7 @@
   </section> 
 </template>
 <script>
+
 export default {
   name: 'Events',
   data () {
@@ -83,20 +83,22 @@ export default {
       title: 'Events',
       subtitle: "Meetings",
       subtitle2: "Hackathons",
-      btn: { text: 'Add to Google Calendar', class:'btn', link: 'https://calendar.google.com/calendar/b/1?cid=dHVhY213QGdtYWlsLmNvbQ'},
+      btn: { text: 'Follow us for updates!', class:'btn', link: '#socialmedia'},
       ths: [ "Date", "Time", "Location", "Meeting"],
       trs: [
         { id: 0, date: '9/23/19', time: '3-4PM', location: 'SERC 358', meeting: 'Career Fair Prep'},
-        { id: 1, date: '9/30/19', time: '3-4PM', location: 'SERC 358', meeting: 'General Body Meeting'}
+        { id: 1, date: '9/30/19', time: '3-4PM', location: 'SERC 358', meeting: 'Sip & Chat'},
+        { id: 1, date: '10/7/19', time: '3-4PM', location: 'SERC 358', meeting: 'Women In Tech Panel'},
       ],
       hackathons: [
-        { id: 0, name: 'codeLinc', website: 'https://www.lfg.com/public/aboutus/companyoverview/corporateresponsibility/codelinc?fbclid=IwAR2WPsRsT-zTG3w34DlK6LenAdoVVKFqMx0yRaURVYI3xm4aR-g5rofTH50', date: 'Sept 27-29th', location: 'Lincoln Financial Greensboro Office', googlemapslink: 'https://www.google.com/maps/place/100+N+Greene+St,+Greensboro,+NC+27401/@36.0728375,-79.7930303,17z/data=!3m1!4b1!4m5!3m4!1s0x885319242e811ba5:0xc2fa6e54a99b67f2!8m2!3d36.0728375!4d-79.7908416?shorturl=1', register: 'https://form.jotform.com/92254483567163' }
+        { id: 0, name: 'codeLinc', website: 'https://www.lfg.com/public/aboutus/companyoverview/corporateresponsibility/codelinc?fbclid=IwAR2WPsRsT-zTG3w34DlK6LenAdoVVKFqMx0yRaURVYI3xm4aR-g5rofTH50', date: 'Sept 27-29th'},
+        { id: 0, name: 'Technica', website: 'https://gotechnica.org/', date: 'Nov 9-10th'}
       ], 
       pastevents: { btntext: 'Past Events', link: '/pastevents'},
       eventPic1: require('@/assets/events/fall_2019/9.23.19_career_fair.png'),
       eventPic2: require('@/assets/events/fall_2019/codeLinc.jpg'),
       event1Desc: 'Learn tips and get your resume reviewed in time for the career fair!',
-      event2Desc: '<a href="https://form.jotform.com/92254483567163">Click to fill out the official registration form</a>'
+      event2Desc: '<a target="_blank" href="https://form.jotform.com/92254483567163">Click to fill out the official registration form</a>'
     }
   }
 }

@@ -29,7 +29,7 @@
       </div>
     </div>
 
-    <div class="icon-container">
+    <div id="socialmedia" class="icon-container">
       <a :key="media.id" data-animate-hover="pulse" v-for="media in socialmedias" :href="media.link"><i class='fab' :class="media.icon"></i></a>
       <a data-animate-hover="pulse" href="mailto:tuacmw@gmail.com"><i class="fas fa-at"></i></a>
     </div>

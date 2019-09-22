@@ -51,7 +51,7 @@ export default {
 
 .jumbotron{
   background: none;
-  margin: 5% 5%;
+  margin: 0 10%;
 }
 h2{
   text-align: center;
@@ -64,9 +64,20 @@ h2{
   color: #d7d5d9;
   margin-bottom: 0.5%;
   cursor: pointer;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
-.panel:hover{
-  border: 0;
+.panel .far{
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.panel:hover .far{
+  transform: scaleY(-1);
+    -moz-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;

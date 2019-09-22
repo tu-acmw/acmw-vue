@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Navbar></Navbar>
     <Home></Home>
     <About></About>
     <Events></Events>
@@ -18,9 +19,6 @@ import Faq from './components/Faq'
 import Signup from './components/Signup'
 import Board from './components/Board'
 
-
-
-
 export default {
   name: 'App',
   components: {
@@ -30,9 +28,6 @@ export default {
 </script>
 
 <style>
-html{
-
-}
 #app {
   width: 100%;
   background: #802225;
@@ -41,18 +36,21 @@ html{
 }
 h1, h2, h3, h4{
   color: #5cb59b;
-  font-size: 24pt;
+  font-size: 32pt;
   margin-bottom: 2%;
 }
 h3, h4{
   font-size: 18pt;
 }
-a{
-  color: #3ba3c3;
-  text-decoration: none;
-}
 p{
   color: #d7d5d9
+}
+a {
+  color: #3ba3c3;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 a:hover{
   color: #3ba3c3c5;
@@ -92,38 +90,5 @@ a:hover{
     margin: 0%;
     padding: 2%;
   }
-}
-.magic-text {
-  opacity: 0;
-  transform: translateY(4em);
-  transition: transform 4s .25s cubic-bezier(0,1,0.3,1),
-              opacity .3s .25s ease-out;
-  will-change: transform, opacity;
-}
-.magic-text.is-visible {
-  opacity: 1;
-  transform: rotateZ(0deg);
-}
-.magic-text-right {
-  opacity: 0;
-  transform: translateX(-4em);
-  transition: transform 4s .25s cubic-bezier(0,1,0.3,1),
-              opacity .3s .25s ease-out;
-  will-change: transform, opacity;
-}
-.magic-text-right.is-visible {
-  opacity: 1;
-  transform: rotateZ(0deg);
-}
-.magic-text-left {
-  opacity: 0;
-  transform: translateX(4em);
-  transition: transform 4s .25s cubic-bezier(0,1,0.3,1),
-              opacity .3s .25s ease-out;
-  will-change: transform, opacity;
-}
-.magic-text-left.is-visible {
-  opacity: 1;
-  transform: rotateZ(0deg);
 }
 </style>
