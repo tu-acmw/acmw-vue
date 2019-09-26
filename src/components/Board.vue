@@ -62,6 +62,7 @@ img{
 }
 h2{
   text-align: center;
+  color: #d7d5d9;
 }
 h4{
   color: #d7d5d9;
