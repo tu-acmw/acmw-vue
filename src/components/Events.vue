@@ -10,6 +10,12 @@
           -->
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
           <!-- Wrapper for carousel items -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+          </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
               <p v-html="upcomingEventDesc"></p>
@@ -92,12 +98,12 @@ export default {
       ], 
       pastevents: { btntext: 'Past Events', link: '/pastevents'},
       events: [
-        //{ id: 0, desc: "Learn tips and get your resume reviewed in time for the career fair!", pic: require('@/assets/events/fall_2019/9.23.19_career_fair.png') },
+        { id: 0, desc: "Learn tips and get your resume reviewed in time for the career fair!", pic: require('@/assets/events/fall_2019/9.23.19_career_fair.png') },
         { id: 1, desc: "<a target=\"_blank\" href=\"https://form.jotform.com/92254483567163\">Click to fill out the official registration form</a>", pic: require('@/assets/events/fall_2019/codeLinc.jpg') },
         { id: 2, desc: "Play games with ACM-W at the Student Center", pic: require('@/assets/events/fall_2019/9.16.19_game_night.png') }
       ],
-      upcomingEvent: require('@/assets/events/fall_2019/9.23.19_career_fair.png'),
-      upcomingEventDesc: "Learn tips and get your resume reviewed in time for the career fair!"
+      upcomingEvent: require('@/assets/events/fall_2019/9.26.19_acmw_acm_game_night.png'),
+      upcomingEventDesc: "Play games with the members of AWM and ACM-W"
     }
   }
 }
@@ -161,7 +167,8 @@ img{
 #myCarousel{
   margin-left: auto;
   margin-right: auto;
-  max-width: 70vh;
+  width: 70vh;
+  height: 80vh;
 }
 .carousel{
   background: none;
