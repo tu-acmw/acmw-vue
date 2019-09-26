@@ -43,7 +43,7 @@ h3, h4{
   font-size: 18pt;
 }
 p{
-  color: #d7d5d9
+  color: #d7d5d9;
 }
 a {
   color: #3ba3c3;

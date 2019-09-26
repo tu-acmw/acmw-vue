@@ -2,6 +2,9 @@
   <div id="about">
     <div class="no-show"></div>
     <div class="jumbotron">
+      <h2><i class="fas fa-exclamation"></i>New Room<i class="fas fa-exclamation"></i><br>SERC 306</h2>
+    </div>
+    <div class="jumbotron">
       <div class="col-md-12"><h2>{{ header }}</h2></div>
       <div class="col-md-12"><p>{{ description }}</p></div>
       <div class="grid">
@@ -44,6 +47,9 @@ export default {
   padding: 3%;
   position: relative;
   text-align: center;
+}
+h2 {
+  color: #d7d5d9;
 }
 .grid{
   display: inline-grid;

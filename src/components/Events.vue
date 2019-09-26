@@ -5,22 +5,19 @@
     <div class="jumbotron">
       <div class="col-md-12">
         <h2>{{ title }}</h2>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <!-- Carousel indicators 
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-          </ol>
+        <!--
+          <Timeline></Timeline>
           -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
           <!-- Wrapper for carousel items -->
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img :src="eventPic1">
-              <p v-html="event1Desc"></p>
+              <p v-html="upcomingEventDesc"></p>
+              <img :src="upcomingEvent">
             </div>
-            <div class="carousel-item">
-              <img :src="eventPic2" alt="Second Slide">
-              <p v-html="event2Desc"></p>
+            <div :key="event.id" v-for="event in events" class="carousel-item">
+              <p v-html="event.desc"></p>
+              <img :src="event.pic">
             </div>
           </div>
           <!-- Carousel controls -->
@@ -64,8 +61,7 @@
             </div>
           </div>
         </div>
-        
-        <!--
+                <!--
         <div>
           <a class="btn show-on-scroll magic-text" :href="pastevents.link">{{ pastevents.btntext }}</a>
         </div>
@@ -75,9 +71,10 @@
   </section> 
 </template>
 <script>
-
+import Timeline from './Timeline';
 export default {
   name: 'Events',
+  components: { Timeline },
   data () {
     return{
       title: 'Events',
@@ -86,19 +83,21 @@ export default {
       btn: { text: 'Follow us for updates!', class:'btn', link: '#socialmedia'},
       ths: [ "Date", "Time", "Location", "Meeting"],
       trs: [
-        { id: 0, date: '9/23/19', time: '3-4PM', location: 'SERC 358', meeting: 'Career Fair Prep'},
-        { id: 1, date: '9/30/19', time: '3-4PM', location: 'SERC 358', meeting: 'Sip & Chat'},
-        { id: 1, date: '10/7/19', time: '3-4PM', location: 'SERC 358', meeting: 'Women In Tech Panel'},
+        { id: 0, date: '9/30/19', time: '3-4PM', location: 'SERC 306', meeting: 'Sip & Chat'},
+        { id: 1, date: '10/7/19', time: '3-4PM', location: 'SERC 306', meeting: 'Women In Tech Panel'},
       ],
       hackathons: [
         { id: 0, name: 'codeLinc', website: 'https://www.lfg.com/public/aboutus/companyoverview/corporateresponsibility/codelinc?fbclid=IwAR2WPsRsT-zTG3w34DlK6LenAdoVVKFqMx0yRaURVYI3xm4aR-g5rofTH50', date: 'Sept 27-29th'},
-        { id: 0, name: 'Technica', website: 'https://gotechnica.org/', date: 'Nov 9-10th'}
+        { id: 1, name: 'Technica', website: 'https://gotechnica.org/', date: 'Nov 9-10th'}
       ], 
       pastevents: { btntext: 'Past Events', link: '/pastevents'},
-      eventPic1: require('@/assets/events/fall_2019/9.23.19_career_fair.png'),
-      eventPic2: require('@/assets/events/fall_2019/codeLinc.jpg'),
-      event1Desc: 'Learn tips and get your resume reviewed in time for the career fair!',
-      event2Desc: '<a target="_blank" href="https://form.jotform.com/92254483567163">Click to fill out the official registration form</a>'
+      events: [
+        //{ id: 0, desc: "Learn tips and get your resume reviewed in time for the career fair!", pic: require('@/assets/events/fall_2019/9.23.19_career_fair.png') },
+        { id: 1, desc: "<a target=\"_blank\" href=\"https://form.jotform.com/92254483567163\">Click to fill out the official registration form</a>", pic: require('@/assets/events/fall_2019/codeLinc.jpg') },
+        { id: 2, desc: "Play games with ACM-W at the Student Center", pic: require('@/assets/events/fall_2019/9.16.19_game_night.png') }
+      ],
+      upcomingEvent: require('@/assets/events/fall_2019/9.23.19_career_fair.png'),
+      upcomingEventDesc: "Learn tips and get your resume reviewed in time for the career fair!"
     }
   }
 }
@@ -156,7 +155,8 @@ th, td{
   text-align: center;
 }
 img{
-  width: 80%;
+  width: 75%;
+  margin-bottom: 5vh;
 }
 #myCarousel{
   margin-left: auto;
