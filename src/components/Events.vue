@@ -89,7 +89,7 @@ export default {
       btn: { text: 'Follow us for updates!', class:'btn', link: '#socialmedia'},
       ths: [ "Date", "Time", "Location", "Meeting"],
       trs: [
-        { id: 0, date: '9/30/19', time: '3-4PM', location: 'SERC 306', meeting: 'Sip & Chat'},
+        { id: 0, date: '9/30/19', time: '3-4PM', location: 'Mr. Wish Temple University', meeting: 'Sip & Chat'},
         { id: 1, date: '10/7/19', time: '3-4PM', location: 'SERC 306', meeting: 'Women In Tech Panel'},
       ],
       hackathons: [
@@ -98,12 +98,13 @@ export default {
       ], 
       pastevents: { btntext: 'Past Events', link: '/pastevents'},
       events: [
-        { id: 0, desc: "Learn tips and get your resume reviewed in time for the career fair!", pic: require('@/assets/events/fall_2019/9.23.19_career_fair.png') },
+        { id: 3, desc: "Play games with the members of AWM and ACM-W", pic: require('@/assets/events/fall_2019/9.26.19_acmw_acm_game_night.png') },
+        { id: 2, desc: "Learn tips and get your resume reviewed in time for the career fair!", pic: require('@/assets/events/fall_2019/9.23.19_career_fair.png') },
         { id: 1, desc: "<a target=\"_blank\" href=\"https://form.jotform.com/92254483567163\">Click to fill out the official registration form</a>", pic: require('@/assets/events/fall_2019/codeLinc.jpg') },
-        { id: 2, desc: "Play games with ACM-W at the Student Center", pic: require('@/assets/events/fall_2019/9.16.19_game_night.png') }
+        { id: 0, desc: "Play games with ACM-W at the Student Center", pic: require('@/assets/events/fall_2019/9.16.19_game_night.png') }
       ],
-      upcomingEvent: require('@/assets/events/fall_2019/9.26.19_acmw_acm_game_night.png'),
-      upcomingEventDesc: "Play games with the members of AWM and ACM-W"
+      upcomingEvent: require('@/assets/events/fall_2019/9.30.19_sip_&_chat.png'),
+      upcomingEventDesc: "Come grab a drink, chat with our board and get to know more about us!"
     }
   }
 }
