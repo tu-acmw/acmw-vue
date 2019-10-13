@@ -51,6 +51,9 @@ export default {
 h2 {
   color: #d7d5d9;
 }
+h3 {
+  color: #ae79e4;
+}
 .grid{
   display: inline-grid;
   grid-template-rows: 1fr 1fr;

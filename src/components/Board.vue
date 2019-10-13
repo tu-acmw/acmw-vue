@@ -68,11 +68,17 @@ h4{
   color: #d7d5d9;
 }
 a{
+   /*
   color: #3ba3c3;
+  */
+  color: #627c4a;
 }
 a:hover{
+  /*
+  color: #3ba3c3c5;
+  */
+  color:#627c4ab9;
   text-decoration: none;
-  color: #d7d5d9;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;

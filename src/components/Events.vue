@@ -90,9 +90,9 @@ export default {
       ths: [ "Date", "Time", "Location", "Meeting"],
       trs: [
         { id: 2, date: '10/14/19', time: '3-4PM', location: 'SERC 306', meeting: 'Student Panel'},
-        { id: 3, date: '10/14/19', time: '3-4PM', location: 'SERC 306', meeting: 'General Body Meeting'},
-        { id: 3, date: '10/22/19', time: '3-4PM', location: 'SERC Lobby', meeting: 'Get to Know Us Bake Sale'},
-        { id: 3, date: '11/26/19', time: '3-4PM', location: 'TBD', meeting: 'TechGirlz Workshop'},
+        { id: 3, date: '10/21/19', time: '3-4PM', location: 'SERC 306', meeting: 'General Body Meeting'},
+        { id: 3, date: '10/29/19', time: '11AM-4PM', location: 'SERC Lobby', meeting: 'Get to Know Us Bake Sale'},
+        { id: 3, date: '11/26/19', time: 'TBD', location: 'TBD', meeting: 'TechGirlz Workshop'},
       ],
       hackathons: [
         //{ id: 0, name: 'codeLinc', website: 'https://www.lfg.com/public/aboutus/companyoverview/corporateresponsibility/codelinc?fbclid=IwAR2WPsRsT-zTG3w34DlK6LenAdoVVKFqMx0yRaURVYI3xm4aR-g5rofTH50', date: 'Sept 27-29th'},
@@ -101,7 +101,7 @@ export default {
       pastevents: { btntext: 'Past Events', link: '/pastevents'},
       events: [
         //{ id: 7, desc: "Listen to students talk about their past internship experiences!", pic: require('@/assets/acmw_logo.png') },
-        { id: 6, desc: "Learn about ACM-W while eating sweets and support TechGirlz", pic: require('@/assets/acmw_logo.png') },
+        { id: 6, desc: "Learn about ACM-W while eating sweets and support TechGirlz", pic: require('@/assets/events/fall_2019/10.29.19_bake_sale.png') },
         { id: 5, desc: "Do homework with us!", pic: require('@/assets/events/fall_2019/10.7.19_hw_night.png') },
         { id: 4, desc: "Come grab a drink, chat with our board and get to know more about us!", pic: require('@/assets/events/fall_2019/9.30.19_sip_&_chat.png') },
         { id: 3, desc: "Play games with the members of AWM and ACM-W", pic: require('@/assets/events/fall_2019/9.26.19_acmw_acm_game_night.png') },
@@ -109,8 +109,8 @@ export default {
         { id: 1, desc: "<a target=\"_blank\" href=\"https://form.jotform.com/92254483567163\">Click to fill out the official registration form</a>", pic: require('@/assets/events/fall_2019/codeLinc.jpg') },
         { id: 0, desc: "Play games with ACM-W at the Student Center", pic: require('@/assets/events/fall_2019/9.16.19_game_night.png') }
       ],
-      upcomingEvent: require('@/assets/acmw_logo.png'),
-      upcomingEventDesc: "Listen to students talk about their past internship experiences!"
+      upcomingEvent: require('@/assets/events/fall_2019/10.14.19_student_panel.png'),
+      upcomingEventDesc: "Listen to students talk about their past internship experiences"
     }
   }
 }
@@ -144,7 +144,11 @@ table{
 }
 th{
   text-align: center; 
+  color: #ae79e4;
+  
+  /* 
   color: #5cb59b;
+  */
 }
 tr:hover td, tr:hover th {
   background-color: #3d3d3d;
