@@ -88,27 +88,13 @@ h2{
 }
 .panel-body {
   border: 1px solid transparent;
+  /*
   border-top-color: #5cb59b;
+  */
+  border-top-color: #ae79e4;
   padding: 1.5%; 
   background: #2c2c2c
   }
-
-.panel-default > .panel-footer + .panel-collapse .panel-body {
-  border-bottom-color: #666666; }
-
-.panel-primary {
-  border-color: #3ba3c3; }
-
-.panel-primary > .panel-heading {
-  color: #ffffff;
-  background-color: #3ba3c3;
-  border-color: #3ba3c3; }
-
-.panel-primary > .panel-heading + .panel-collapse .panel-body {
-  border-top-color: #3ba3c3; }
-
-.panel-primary > .panel-footer + .panel-collapse .panel-body {
-  border-bottom-color: #3ba3c3; }
 
 .panel-primary .panel-title {
   font-weight: 300; }

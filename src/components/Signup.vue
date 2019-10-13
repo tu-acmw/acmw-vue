@@ -118,23 +118,16 @@ footer{
 .form-control {
   color: #2c2c2c;
   background: #d7d5d9;
+  /*
   border: 1px solid #5cb59b;
+  */
+  border: 1px solid #ae79e4;
   margin-bottom: 1%;
   border-radius: 5px;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 
-.form-control::-moz-placeholder {
-  color: #3ba3c3c5;
-  opacity: 1; }
-
-.form-control:-ms-input-placeholder {
-  color: #3ba3c3c5; }
-
-.form-control::-webkit-input-placeholder {
-  color: #3ba3c3c5;
-  /* placeholder text color */ }
 @media (max-width: 800px){
   .form-control{
     width: 70%;
