@@ -89,22 +89,28 @@ export default {
       btn: { text: 'Follow us for updates!', class:'btn', link: '#socialmedia'},
       ths: [ "Date", "Time", "Location", "Meeting"],
       trs: [
-        { id: 0, date: '9/30/19', time: '3-4PM', location: 'Mr. Wish Temple University', meeting: 'Sip & Chat'},
-        { id: 1, date: '10/7/19', time: '3-4PM', location: 'SERC 306', meeting: 'Women In Tech Panel'},
+        { id: 2, date: '10/14/19', time: '3-4PM', location: 'SERC 306', meeting: 'Student Panel'},
+        { id: 3, date: '10/14/19', time: '3-4PM', location: 'SERC 306', meeting: 'General Body Meeting'},
+        { id: 3, date: '10/22/19', time: '3-4PM', location: 'SERC Lobby', meeting: 'Get to Know Us Bake Sale'},
+        { id: 3, date: '11/26/19', time: '3-4PM', location: 'TBD', meeting: 'TechGirlz Workshop'},
       ],
       hackathons: [
-        { id: 0, name: 'codeLinc', website: 'https://www.lfg.com/public/aboutus/companyoverview/corporateresponsibility/codelinc?fbclid=IwAR2WPsRsT-zTG3w34DlK6LenAdoVVKFqMx0yRaURVYI3xm4aR-g5rofTH50', date: 'Sept 27-29th'},
+        //{ id: 0, name: 'codeLinc', website: 'https://www.lfg.com/public/aboutus/companyoverview/corporateresponsibility/codelinc?fbclid=IwAR2WPsRsT-zTG3w34DlK6LenAdoVVKFqMx0yRaURVYI3xm4aR-g5rofTH50', date: 'Sept 27-29th'},
         { id: 1, name: 'Technica', website: 'https://gotechnica.org/', date: 'Nov 9-10th'}
       ], 
       pastevents: { btntext: 'Past Events', link: '/pastevents'},
       events: [
+        //{ id: 7, desc: "Listen to students talk about their past internship experiences!", pic: require('@/assets/acmw_logo.png') },
+        { id: 6, desc: "Learn about ACM-W while eating sweets and support TechGirlz", pic: require('@/assets/acmw_logo.png') },
+        { id: 5, desc: "Do homework with us!", pic: require('@/assets/events/fall_2019/10.7.19_hw_night.png') },
+        { id: 4, desc: "Come grab a drink, chat with our board and get to know more about us!", pic: require('@/assets/events/fall_2019/9.30.19_sip_&_chat.png') },
         { id: 3, desc: "Play games with the members of AWM and ACM-W", pic: require('@/assets/events/fall_2019/9.26.19_acmw_acm_game_night.png') },
         { id: 2, desc: "Learn tips and get your resume reviewed in time for the career fair!", pic: require('@/assets/events/fall_2019/9.23.19_career_fair.png') },
         { id: 1, desc: "<a target=\"_blank\" href=\"https://form.jotform.com/92254483567163\">Click to fill out the official registration form</a>", pic: require('@/assets/events/fall_2019/codeLinc.jpg') },
         { id: 0, desc: "Play games with ACM-W at the Student Center", pic: require('@/assets/events/fall_2019/9.16.19_game_night.png') }
       ],
-      upcomingEvent: require('@/assets/events/fall_2019/9.30.19_sip_&_chat.png'),
-      upcomingEventDesc: "Come grab a drink, chat with our board and get to know more about us!"
+      upcomingEvent: require('@/assets/acmw_logo.png'),
+      upcomingEventDesc: "Listen to students talk about their past internship experiences!"
     }
   }
 }
