@@ -92,7 +92,7 @@ export default {
         { id: 2, date: '10/14/19', time: '3-4PM', location: 'SERC 306', meeting: 'Student Panel'},
         { id: 3, date: '10/21/19', time: '3-4PM', location: 'SERC 306', meeting: 'General Body Meeting'},
         { id: 3, date: '10/29/19', time: '11AM-4PM', location: 'SERC Lobby', meeting: 'Get to Know Us Bake Sale'},
-        { id: 3, date: '11/26/19', time: 'TBD', location: 'TBD', meeting: 'TechGirlz Workshop'},
+        { id: 3, date: '11/23/19', time: 'TBD', location: 'TBD', meeting: 'TechGirlz Workshop'},
       ],
       hackathons: [
         //{ id: 0, name: 'codeLinc', website: 'https://www.lfg.com/public/aboutus/companyoverview/corporateresponsibility/codelinc?fbclid=IwAR2WPsRsT-zTG3w34DlK6LenAdoVVKFqMx0yRaURVYI3xm4aR-g5rofTH50', date: 'Sept 27-29th'},
