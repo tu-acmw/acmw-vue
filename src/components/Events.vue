@@ -112,7 +112,7 @@ export default {
         { id: 1, desc: "<a target=\"_blank\" href=\"https://form.jotform.com/92254483567163\">Click to fill out the official registration form</a>", pic: require('@/assets/events/fall_2019/codeLinc.jpg') },
         { id: 0, desc: "Play games with ACM-W at the Student Center", pic: require('@/assets/events/fall_2019/9.16.19_game_night.png') }
       ],
-      upcomingEvent: require('@/assets/acmw_logo.png'),
+      upcomingEvent: require('@/assets/events/fall_2019/10.21.19_trivia_night.png'),
       upcomingEventDesc: "Think you know career, coding, and ACM-W? Win swag at Trivia Night!"
     }
   }
