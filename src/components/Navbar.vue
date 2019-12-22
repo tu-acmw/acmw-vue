@@ -57,7 +57,7 @@ i{
   font-size: 18pt;
 }
 a:focus, a:hover, i:focus, i:hover, .navbar-brand:hover {
-  color:#5cb59b;
+
   border-bottom: none; 
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;

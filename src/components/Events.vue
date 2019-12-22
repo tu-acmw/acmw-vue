@@ -89,20 +89,15 @@ export default {
       btn: { text: 'Follow us for updates!', class:'btn', link: '#socialmedia'},
       ths: [ "Date", "Time", "Location", "Meeting"],
       trs: [
-        { id: 3, date: '10/21/19', time: '3-4PM', location: 'SERC 306', meeting: 'Trivia Night'},
-        { id: 2, date: '10/28/19', time: '3-4PM', location: 'SERC 306', meeting: 'Scavenger Hunt'},
-        { id: 1, date: '10/29/19', time: '11AM-4PM', location: 'SERC Lobby', meeting: 'Get to Know Us Bake Sale'},
-        { id: 0, date: '11/4/19', time: '3-4PM', location: 'SERC 306', meeting: 'Grace Hopper Panel'},
-        //{ id: 0, date: '11/11/19', time: '3-4PM', location: 'SERC 306', meeting: 'HW Night'},
-        //{ id: 0, date: '11/28/19', time: '3-4PM', location: 'SERC 306', meeting: 'Thanksgiving Potluck'},
-        { id: 0, date: '11/23/19', time: 'TBD', location: 'TBD', meeting: 'TechGirlz Workshop'},
+        { id: 0, date: 'TBD', time: 'TBD', location: 'TBD', meeting: 'First General Body Meeting'},
       ],
       hackathons: [
-        //{ id: 0, name: 'codeLinc', website: 'https://www.lfg.com/public/aboutus/companyoverview/corporateresponsibility/codelinc?fbclid=IwAR2WPsRsT-zTG3w34DlK6LenAdoVVKFqMx0yRaURVYI3xm4aR-g5rofTH50', date: 'Sept 27-29th'},
-        { id: 1, name: 'Technica', website: 'https://gotechnica.org/', date: 'Nov 9-10th'}
+        { id: 1, name: 'OwlHacks', website: 'https://owlhacks.com', date: 'TBD'}
       ], 
       pastevents: { btntext: 'Past Events', link: '/pastevents'},
-      events: [
+      events: [        
+        { id: 9, desc: "", pic: require('@/assets/events/fall_2019/halloween_scavenger_hunt.png') },        
+        { id: 8, desc: "Think you know career, coding, and ACM-W? Win swag at Trivia Night!", pic: require('@/assets/events/fall_2019/10.21.19_trivia_night.png') },        
         { id: 7, desc: "Learn about ACM-W, support TechGirlz, and enjoy Halloween treats", pic: require('@/assets/events/fall_2019/10.29.19_bake_sale.png') },        
         { id: 6, desc: "Listen to students talk about their past internship experiences!", pic: require('@/assets/events/fall_2019/10.14.19_student_panel.png') },
         { id: 5, desc: "Do homework with us!", pic: require('@/assets/events/fall_2019/10.7.19_hw_night.png') },
@@ -112,8 +107,8 @@ export default {
         { id: 1, desc: "<a target=\"_blank\" href=\"https://form.jotform.com/92254483567163\">Click to fill out the official registration form</a>", pic: require('@/assets/events/fall_2019/codeLinc.jpg') },
         { id: 0, desc: "Play games with ACM-W at the Student Center", pic: require('@/assets/events/fall_2019/9.16.19_game_night.png') }
       ],
-      upcomingEvent: require('@/assets/events/fall_2019/10.21.19_trivia_night.png'),
-      upcomingEventDesc: "Think you know career, coding, and ACM-W? Win swag at Trivia Night!"
+      upcomingEvent: require('@/assets/events/fall_2019/thanksgiving_potluck.png'),
+      upcomingEventDesc: ""
     }
   }
 }
@@ -147,11 +142,7 @@ table{
 }
 th{
   text-align: center; 
-  color: #ae79e4;
-  
-  /* 
   color: #5cb59b;
-  */
 }
 tr:hover td, tr:hover th {
   background-color: #3d3d3d;
