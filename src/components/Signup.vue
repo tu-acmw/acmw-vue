@@ -44,8 +44,8 @@ export default {
   name: 'Signup',
   data () {
     return{
-      header: 'Subscribe',
-      description: 'Get news & updates from us!',
+      header: 'Stay Connected',
+      description: 'Subscribe to our newsletter to get news & updates from us!',
       socialmedias: [
         { id: 0, icon: 'fa-instagram', link: 'https://www.instagram.com/tuacm_w/' },
         { id: 1, icon: 'fa-facebook-square', link: 'https://www.facebook.com/templeuniversityacmw9/' },
