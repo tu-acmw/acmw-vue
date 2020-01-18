@@ -89,26 +89,22 @@ export default {
       btn: { text: 'Follow us for updates!', class:'btn', link: '#socialmedia'},
       ths: [ "Date", "Time", "Location", "Meeting"],
       trs: [
-        { id: 0, date: 'TBD', time: 'TBD', location: 'TBD', meeting: 'First General Body Meeting'},
+        { id: 0, date: '1/27/20', time: '5-6', location: 'SERC 302', meeting: 'First General Body Meeting'},
+        { id: 1, date: '2/3/20', time: '5-6', location: 'SERC 302', meeting: 'Career Fair Prep'},
+
       ],
       hackathons: [
+        { id: 0, name: 'TechTogether Boston', website: 'https://boston.techtogether.io/', date: '1/31 - 2/2'},
+        { id: 0, name: 'FemmeHacks', website: 'http://femmehacks.io/index.html', date: '2/7 - 2/8'},
         { id: 1, name: 'OwlHacks', website: 'https://owlhacks.com', date: 'TBD'}
       ], 
       pastevents: { btntext: 'Past Events', link: '/pastevents'},
-      events: [        
-        { id: 9, desc: "", pic: require('@/assets/events/fall_2019/halloween_scavenger_hunt.png') },        
-        { id: 8, desc: "Think you know career, coding, and ACM-W? Win swag at Trivia Night!", pic: require('@/assets/events/fall_2019/10.21.19_trivia_night.png') },        
-        { id: 7, desc: "Learn about ACM-W, support TechGirlz, and enjoy Halloween treats", pic: require('@/assets/events/fall_2019/10.29.19_bake_sale.png') },        
-        { id: 6, desc: "Listen to students talk about their past internship experiences!", pic: require('@/assets/events/fall_2019/10.14.19_student_panel.png') },
-        { id: 5, desc: "Do homework with us!", pic: require('@/assets/events/fall_2019/10.7.19_hw_night.png') },
-        { id: 4, desc: "Come grab a drink, chat with our board and get to know more about us!", pic: require('@/assets/events/fall_2019/9.30.19_sip_&_chat.png') },
-        { id: 3, desc: "Play games with the members of AWM and ACM-W", pic: require('@/assets/events/fall_2019/9.26.19_acmw_acm_game_night.png') },
-        { id: 2, desc: "Learn tips and get your resume reviewed in time for the career fair!", pic: require('@/assets/events/fall_2019/9.23.19_career_fair.png') },
-        { id: 1, desc: "<a target=\"_blank\" href=\"https://form.jotform.com/92254483567163\">Click to fill out the official registration form</a>", pic: require('@/assets/events/fall_2019/codeLinc.jpg') },
-        { id: 0, desc: "Play games with ACM-W at the Student Center", pic: require('@/assets/events/fall_2019/9.16.19_game_night.png') }
+      events: [ 
+        { id: 1, desc: "Get ready for the career fair", pic: require('@/assets/events/spring_2020/career_fair.png') },
+        // { id: 0, desc: "Welcome back! Come to the first general body meeting", pic: require('@/assets/events/spring_2020/gbm.png') }
       ],
-      upcomingEvent: require('@/assets/events/fall_2019/thanksgiving_potluck.png'),
-      upcomingEventDesc: ""
+      upcomingEvent: require('@/assets/events/spring_2020/gbm.png'),
+      upcomingEventDesc: "Welcome back! Come to the first general body meeting"
     }
   }
 }
