@@ -89,22 +89,22 @@ export default {
       btn: { text: 'Follow us for updates!', class:'btn', link: '#socialmedia'},
       ths: [ "Date", "Time", "Location", "Meeting"],
       trs: [
-        { id: 0, date: '1/27/20', time: '5-6', location: 'SERC 302', meeting: 'First General Body Meeting'},
-        { id: 1, date: '2/3/20', time: '5-6', location: 'SERC 302', meeting: 'Career Fair Prep'},
+        { id: 0, date: '2/10/20', time: '5-6', location: 'SERC 302', meeting: 'GHC Workshop'},
+        { id: 1, date: '2/17/20', time: '5-6', location: 'SERC 302', meeting: 'Homework Night'},
 
       ],
       hackathons: [
-        { id: 0, name: 'TechTogether Boston', website: 'https://boston.techtogether.io/', date: '1/31 - 2/2'},
-        { id: 0, name: 'FemmeHacks', website: 'http://femmehacks.io/index.html', date: '2/7 - 2/8'},
-        { id: 1, name: 'OwlHacks', website: 'https://owlhacks.com', date: 'TBD'}
+        { id: 0, name: 'Dragon Hacks', website: 'https://dragonhacks.org/', date: '2/22 - 2/23'},
+        { id: 0, name: 'Programming 101', website: 'https://www.facebook.com/events/towne-building/pennapps-presents-programming-101/868409276930661/', date: '2/22'},
+        { id: 1, name: 'OwlHacks', website: 'https://owlhacks.com', date: '4/18 - 4/19'}
       ], 
       pastevents: { btntext: 'Past Events', link: '/pastevents'},
       events: [ 
         { id: 1, desc: "Get ready for the career fair", pic: require('@/assets/events/spring_2020/career_fair.png') },
-        // { id: 0, desc: "Welcome back! Come to the first general body meeting", pic: require('@/assets/events/spring_2020/gbm.png') }
+        { id: 0, desc: "Welcome back! Come to the first general body meeting", pic: require('@/assets/events/spring_2020/gbm.png') }
       ],
-      upcomingEvent: require('@/assets/events/spring_2020/gbm.png'),
-      upcomingEventDesc: "Welcome back! Come to the first general body meeting"
+      upcomingEvent: require('@/assets/events/spring_2020/ghc.jpg'),
+      upcomingEventDesc: "Learn how to make a successful GHC Scholarship essay"
     }
   }
 }
