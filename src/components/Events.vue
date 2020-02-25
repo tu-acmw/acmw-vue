@@ -89,22 +89,22 @@ export default {
       btn: { text: 'Follow us for updates!', class:'btn', link: '#socialmedia'},
       ths: [ "Date", "Time", "Location", "Meeting"],
       trs: [
-        { id: 0, date: '2/10/20', time: '5-6', location: 'SERC 302', meeting: 'GHC Workshop'},
-        { id: 1, date: '2/17/20', time: '5-6', location: 'SERC 302', meeting: 'Homework Night'},
-
+        { id: 0, date: '2/24/20', time: '5-6', location: 'Temple Mr. Wish', meeting: 'Bubble Tea & Chat'},
+        { id: 1, date: '3/9/20', time: '5-6', location: 'SERC 302', meeting: 'GBM'},
+        { id: 1, date: '3/14/20', time: '', location: '', meeting: 'TechGirlz Workshop on Artificial Intelligence'},
+        { id: 1, date: '3/16/20', time: '5-6', location: 'SERC 302', meeting: 'GBM'},
       ],
       hackathons: [
-        { id: 0, name: 'Dragon Hacks', website: 'https://dragonhacks.org/', date: '2/22 - 2/23'},
-        { id: 0, name: 'Programming 101', website: 'https://www.facebook.com/events/towne-building/pennapps-presents-programming-101/868409276930661/', date: '2/22'},
         { id: 1, name: 'OwlHacks', website: 'https://owlhacks.com', date: '4/18 - 4/19'}
       ], 
       pastevents: { btntext: 'Past Events', link: '/pastevents'},
       events: [ 
+        { id: 2, desc: "Learn how to make a successful GHC Scholarship essay", pic: require('@/assets/events/spring_2020/ghc.jpg') },
         { id: 1, desc: "Get ready for the career fair", pic: require('@/assets/events/spring_2020/career_fair.png') },
         { id: 0, desc: "Welcome back! Come to the first general body meeting", pic: require('@/assets/events/spring_2020/gbm.png') }
       ],
-      upcomingEvent: require('@/assets/events/spring_2020/ghc.jpg'),
-      upcomingEventDesc: "Learn how to make a successful GHC Scholarship essay"
+      upcomingEvent: require('@/assets/events/spring_2020/bubble_tea.jpg'),
+      upcomingEventDesc: "Drink bubble tea and chat with members"
     }
   }
 }

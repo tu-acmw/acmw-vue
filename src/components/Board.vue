@@ -8,7 +8,7 @@
             <div class="profile" v-for="member in members">
               <img :src="member.img" alt="">
               <h4>{{ member.name }}</h4>
-              <p><a target="_blank" :href="member.linkedin">{{ member.position }} <i class="fab fa-linkedin"></i></a></p>
+              <p> <a target="_blank" :href="member.linkedin">{{ member.position }} <i class="fab fa-linkedin"></i></a></p>
             </div>
           </div>
         </div>
@@ -36,7 +36,7 @@ export default {
         { name: 'Zakia Hossain', position: 'Fundraising Chair', linkedin: 'https://www.linkedin.com/in/zakia-hossain/', img: require('@/assets/profile/zakia.jpg') },
         { name: 'Jane Chen', position: 'Stars Coordinator', linkedin: 'https://www.linkedin.com/in/janeechenn/', img: require('@/assets/profile/jane.jpg') },
         { name: 'Jiayi Yin', position: 'TSG Representative', linkedin: 'https://www.linkedin.com/in/jiayi-yin-65a27a195/', img: require('@/assets/profile/jiayi.jpg') },
-        { name: 'Annica Chiu', position: 'Webmaster', linkedin: 'https://www.linkedin.com/in/annica-chiu-45369a17b/', img: require('@/assets/profile/annica.png') }
+        { name: 'Annica Chiu', position: 'Webmaster', linkedin: 'https://www.linkedin.com/in/annica-chiu-45369a17b/', img: require('@/assets/profile/annica.jpg') }
       ]
     }  
   },
