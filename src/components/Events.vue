@@ -90,7 +90,7 @@ export default {
       ths: [ "Date", "Time", "Location", "Meeting"],
       trs: [
         { id: 0, date: '2/24/20', time: '5-6', location: 'Temple Mr. Wish', meeting: 'Bubble Tea & Chat'},
-        { id: 1, date: '3/9/20', time: '5-6', location: 'SERC 302', meeting: 'GBM'},
+        { id: 1, date: '3/9/20', time: '5-6', location: 'SERC 302', meeting: 'Women\'s History Month Trivia & Potluck'},
         { id: 1, date: '3/14/20', time: '', location: '', meeting: 'TechGirlz Workshop on Artificial Intelligence'},
         { id: 1, date: '3/16/20', time: '5-6', location: 'SERC 302', meeting: 'GBM'},
       ],
