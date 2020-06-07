@@ -81,10 +81,10 @@ a:hover{
     font-size: 14pt;
   }
   p{
-    font-size: 12pt;
+    font-size: 10pt;
   }
   th,tr,table{
-    font-size: 12pt;
+    font-size: 10pt;
   }
   .jumbotron{
     margin: 0%;

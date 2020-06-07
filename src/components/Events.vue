@@ -104,7 +104,10 @@ export default {
 
 <style scoped>
 .jumbotron{
+  width: 85%;
   background: transparent;
+  margin: 0 7.5%;
+  padding: 2%;
 }
 .grid{
   display: grid;
@@ -160,8 +163,8 @@ img{
 #myCarousel{
   margin-left: auto;
   margin-right: auto;
-  width: 70vh;
-  height: 80vh;
+  max-width: 70vh;
+  max-height: 80vh;
 }
 .carousel{
   background: none;
@@ -172,11 +175,13 @@ img{
 }
 @media (max-width: 768px){ 
   .jumbotron{
+    margin: 0;
+    width: 100%;
     margin-bottom: 10%;
-    margin: 0 -4%;
   }
   .grid{
-    display: block;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
   }
   .btn{
     width: 50%;
