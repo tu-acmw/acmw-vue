@@ -126,8 +126,11 @@ footer{
 }
 
 @media (max-width: 800px){
+  .jumbotron {
+    border-radius: 0;
+  }
   .form-control{
-    width: 70%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
   }

@@ -6,11 +6,11 @@
         <div class="panel-group faqgrid" id="faqAccordion">
           <div v-for="question in questions" :class="question.num">
             <div class="panel panel-default">
-              <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" :data-target="question.target">
+              <div class="question panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" :data-target="question.target">
                 <p>
-                  <i class="far fa-hand-pointer"></i>
                   {{ question.q }}
                 </p>
+                <i class="far fa-hand-pointer"></i>
               </div>
             <div :id="question.num" class="panel-collapse collapse">
               <div class="panel-body">
@@ -49,8 +49,10 @@ export default {
 <style scoped>
 
 .jumbotron{
-  background: none;
-  margin: 0 10%;
+  width: 85%;
+  background: transparent;
+  margin: 0 7.5%;
+  padding: 2%;
 }
 h2{
   text-align: center;
@@ -82,19 +84,22 @@ h2{
   transition: all 0.2s ease-out;
 }
 .panel-heading{
-  padding: 1%;
-  padding-left: 4%;
+  padding: 1% 4%;
+  align-items: center;
+}
+.question {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.question > i {
+  text-align: right;
 }
 .panel-body {
   border: 1px solid transparent;
   border-top-color: #5cb59b;
   padding: 1.5%; 
   background: #2c2c2c
-  }
-
-.panel-primary .panel-title {
-  font-weight: 300; }
-
+}
 .panel-primary .panel-title a:hover {
   color: #fff;
   text-decoration: none; }

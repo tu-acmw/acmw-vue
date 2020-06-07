@@ -43,11 +43,10 @@ export default {
 
 <style scoped>
 .jumbotron{
-  width: 90%;
+  width: 85%;
   background: #2c2c2c;
-  margin: 1% 5%;
-  padding: 3%;
-  position: relative;
+  margin: 0 7.5%;
+  padding: 2%;
   text-align: center;
 }
 h2 {
