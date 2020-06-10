@@ -69,5 +69,9 @@ p {
     margin: 0;
     border-radius: 0;
   }
+  .ops {
+    width: 100%;
+    margin: 0;
+  }
 }
 </style>
