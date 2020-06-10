@@ -84,10 +84,10 @@ export default {
       btn: { text: 'Follow us for updates!', class:'btn', link: '#socialmedia'},
       ths: [ "Date", "Time", "Location", "Meeting"],
       trs: [
-        { id: 0, date: '2/24/20', time: '5-6', location: 'Temple Mr. Wish', meeting: 'Bubble Tea & Chat'},
+        { id: 0, date: 'TBD', time: 'TBD', location: 'TBD', meeting: 'First General Body Meeting'},
       ],
       hackathons: [
-        { id: 1, name: 'OwlHacks', website: 'https://owlhacks.com', date: '4/18 - 4/19'}
+        { id: 1, name: 'Online Hackathons on Devpost', website: 'https://devpost.com/hackathons', date: ''}
       ], 
       pastevents: { btntext: 'Past Events', link: '/pastevents'},
       events: [ 
