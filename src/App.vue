@@ -4,6 +4,7 @@
     <Home></Home>
     <About></About>
     <Events></Events>
+    <Opportunities></Opportunities>
     <Board></Board>
     <Faq></Faq>
     <Signup></Signup>
@@ -18,11 +19,12 @@ import Events from './components/Events'
 import Faq from './components/Faq'
 import Signup from './components/Signup'
 import Board from './components/Board'
+import Opportunities from './components/Opportunities'
 
 export default {
   name: 'App',
   components: {
-    Navbar, Home, About, Events, Faq, Signup, Board
+    Navbar, Home, About, Events, Faq, Signup, Board, Opportunities
   }
 }
 </script>
