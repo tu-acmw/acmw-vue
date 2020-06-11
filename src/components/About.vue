@@ -44,16 +44,17 @@ export default {
 <style scoped>
 .jumbotron{
   width: 85%;
-  background: #2c2c2c;
+  background: #232323;
   margin: 0 7.5%;
   margin-bottom: 5%;
   padding: 2%;
   text-align: center;
 }
 h2 {
-  color: #d7d5d9;
+  color: #FFD6E3;
 }
 h3 {
+  color: #FFD6E3;
 }
 .grid{
   display: inline-grid;

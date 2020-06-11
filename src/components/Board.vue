@@ -48,7 +48,7 @@ export default {
 <style scoped>
 .jumbotron{
   width: 85%;
-  background: #2c2c2c;
+  background: #232323;
   margin: 0 7.5%;
   padding: 2%;
 }
@@ -66,16 +66,12 @@ export default {
 }
 h2{
   text-align: center;
-  color: #d7d5d9;
+  color: #FFD6E3;
 }
 h4{
   color: #d7d5d9;
 }
-a{
-  color: #3ba3c3;
-}
 a:hover{
-  color: #3ba3c3c5;
   text-decoration: none;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;

@@ -133,7 +133,8 @@ table{
 }
 th{
   text-align: center; 
-  color: #5cb59b;
+  color: #D6C1D7;
+  font-weight: normal;
 }
 tr:hover td, tr:hover th {
   background-color: #3d3d3d;
@@ -153,7 +154,7 @@ th, td{
   margin: 2%;
   padding: 4%;
   border-radius: 5px;
-  color: #5cb59b;
+  color: #65A0CD;
   text-align: center;
 }
 img{

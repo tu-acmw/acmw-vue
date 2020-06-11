@@ -96,7 +96,7 @@ h2{
 }
 .panel-body {
   border: 1px solid transparent;
-  border-top-color: #5cb59b;
+  border-top-color: #659ECD;
   padding: 1.5%; 
   background: #2c2c2c
 }
