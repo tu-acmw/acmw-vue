@@ -39,10 +39,13 @@ body, html {
 
 .jumbotron{
   width: 85%;
-  background: #2c2c2c;
+  background: #232323;
   margin: 0 7.5%;
   margin-bottom: 5%;
   padding: 2%;
+}
+h2, h4 {
+  color: #FFD6E3;
 }
 h2 {
   text-align: center;

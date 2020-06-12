@@ -69,7 +69,7 @@ export default {
   position: relative;
 }
 h2{
-  color: #d7d5d9;
+  color: #FFD6E3;
 }
 .row{
   display: flex;
@@ -96,7 +96,7 @@ p{
   color: #d7d5d9;
 }
 a:focus, a:hover {
-  color:#5cb59b;
+  color: #FFD6E3;
   border-bottom: none; 
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -118,7 +118,7 @@ footer{
 .form-control {
   color: #2c2c2c;
   background: #d7d5d9;
-  border: 1px solid #5cb59b;
+  border: 1px solid #659ECD;
   margin-bottom: 1%;
   border-radius: 5px;
   -webkit-box-shadow: none;

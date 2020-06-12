@@ -32,12 +32,12 @@ export default {
 <style>
 #app {
   width: 100%;
-  background: #802225;
+  background: #6A1111;
   font-size: 14pt;
   overflow: hidden;
 }
 h1, h2, h3, h4{
-  color: #5cb59b;
+  color: #93BBDC;
   font-size: 32pt;
   margin-bottom: 2%;
 }
@@ -48,14 +48,14 @@ p{
   color: #d7d5d9;
 }
 a {
-  color: #3ba3c3;
+  color: #659ECD;
   text-decoration: none;
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 a:hover{
-  color: #3ba3c3c5;
+  color: #3776A9;
   text-decoration: none;
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
@@ -63,12 +63,12 @@ a:hover{
 }
 .btn{
   margin-bottom: 2%;
-  background: #3ba3c3;
+  background: #659ECD;
   color: #d7d5d9;
   float: right;
 }
 .btn:hover, .btn:focus{
-  background:#3ba3c3c5;
+  background:#3776A9;
   color: #d7d5d9;
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
@@ -79,7 +79,6 @@ a:hover{
 }
 @media (max-width: 768px){ 
   h1, h2, h3, h4{
-    color: #5cb59b;
     font-size: 14pt;
   }
   p{
