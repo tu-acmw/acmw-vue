@@ -2,9 +2,9 @@
   <div id="app">
     <Navbar></Navbar>
     <Home></Home>
-    <About></About>
     <Events></Events>
     <Opportunities></Opportunities>
+    <About></About>
     <Board></Board>
     <Faq></Faq>
     <Signup></Signup>
@@ -36,6 +36,9 @@ export default {
   font-size: 14pt;
   overflow: hidden;
 }
+h2 {
+  text-transform: capitalize;
+}
 h1, h2, h3, h4{
   color: #93BBDC;
   font-size: 32pt;
@@ -65,7 +68,6 @@ a:hover{
   margin-bottom: 2%;
   background: #659ECD;
   color: #d7d5d9;
-  float: right;
 }
 .btn:hover, .btn:focus{
   background:#3776A9;

@@ -5,24 +5,12 @@
     <div class="jumbotron">
       <div class="col-md-12">
         <h2>{{ title }}</h2>
-        <!--
-          <Timeline></Timeline>
-          -->
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <!-- Wrapper for carousel items -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            <li data-target="#myCarousel" data-slide-to="3"></li>
-          </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <p v-html="upcomingEventDesc"></p>
               <img :src="upcomingEvent">
             </div>
             <div :key="event.id" v-for="event in events" class="carousel-item">
-              <p v-html="event.desc"></p>
               <img :src="event.pic">
             </div>
           </div>
@@ -34,38 +22,22 @@
             <span class="carousel-control-next-icon"></span>
           </a>
         </div>
-        <div class="grid">
-          <!--Upcoming Events-->
-          <div class="grid-item">
-            <div class="subtitle">
-              <h3>{{ subtitle }}</h3>
-              <a target="_blank" :class="btn.class" class="" :href="btn.link">{{ btn.text }}</a>
-            </div>
-            <table class="">
-              <tr>
-                <th :key="th.id" v-for="th in ths">{{ th }}</th>
-              </tr>
-              <tr :key="tr.id" v-for="tr in trs">
-                <td>{{ tr.date }}</td>
-                <td>{{ tr.time }}</td>
-                <td>{{ tr.location }}</td>
-                <td>{{ tr.meeting }}</td>
-              </tr>
-            </table>
-          </div>
-          <!--Hackathons-->
-          <div class="grid-item">
-            <div class="subtitle">
-              <h3>{{ subtitle2 }}</h3>
-            </div>
-            <div :key="hackathon.id" v-for="hackathon in hackathons" class="hackathon-container">
-              <h4><a :href="hackathon.website">{{ hackathon.name }}</a></h4>
-              <div class="text-md">
-                  <p><i class="fa fa-calendar"></i> {{ hackathon.date }}</p>
-                  <p><a target="_blank" :href="hackathon.website"><i class="fa fa-globe"></i> Website</a></p>
-              </div>
-            </div>
-          </div>
+        <div id="event-table">
+          <h2>{{ tableTitle }}</h2>
+          <table>
+            <tr>
+              <th :key="th.id" v-for="th in ths">{{ th }}</th>
+            </tr>
+            <tr :key="tr.id" v-for="tr in trs">
+              <td>{{ tr.date }}</td>
+              <td>{{ tr.time }}</td>
+              <td>{{ tr.location }}</td>
+              <td>{{ tr.meeting }}</td>
+            </tr>
+          </table>
+        </div>
+        <div class="btn-container">
+          <a target="_blank" :class="btn.class" class="btn" :href="btn.link">{{ btn.text }}</a>
         </div>
       </div>
     </div>
@@ -78,25 +50,20 @@ export default {
   components: { Timeline },
   data () {
     return{
-      title: 'Events',
-      subtitle: "Meetings",
-      subtitle2: "Hackathons",
-      btn: { text: 'Follow us for updates!', class:'btn', link: '#socialmedia'},
-      ths: [ "Date", "Time", "Location", "Meeting"],
+      title: 'Upcoming Events',
+      tableTitle: 'Event Details',
+      btn: { text: 'Connect with us for updates!', class:'btn', link: '#socialmedia'},
+      ths: [ "Date", "Time", "Location", "Event"],
       trs: [
         { id: 0, date: 'TBD', time: 'TBD', location: 'TBD', meeting: 'First General Body Meeting'},
       ],
-      hackathons: [
-        { id: 1, name: 'Online Hackathons on Devpost', website: 'https://devpost.com/hackathons', date: ''}
-      ], 
       pastevents: { btntext: 'Past Events', link: '/pastevents'},
       events: [ 
-        { id: 2, desc: "Learn how to make a successful GHC Scholarship essay", pic: require('@/assets/events/spring_2020/ghc.jpg') },
-        { id: 1, desc: "Get ready for the career fair", pic: require('@/assets/events/spring_2020/career_fair.png') },
-        { id: 0, desc: "Welcome back! Come to the first general body meeting", pic: require('@/assets/events/spring_2020/gbm.png') }
+        { id: 2, pic: require('@/assets/events/spring_2020/ghc.jpg') },
+        { id: 1, pic: require('@/assets/events/spring_2020/career_fair.png') },
+        { id: 0, pic: require('@/assets/events/spring_2020/gbm.png') }
       ],
-      upcomingEvent: require('@/assets/events/spring_2020/bubble_tea.jpg'),
-      upcomingEventDesc: "Drink bubble tea and chat with members"
+      upcomingEvent: require('@/assets/events/spring_2020/bubble_tea.jpg')
     }
   }
 }
@@ -108,14 +75,6 @@ export default {
   background: transparent;
   margin: 0 7.5%;
   padding: 2%;
-}
-.grid{
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-gap: 2%;
-}
-.grid-item{
-  width: 100%;
 }
 .subtitle{
   display: flex;
@@ -149,14 +108,6 @@ table, th, td {
 th, td{
   padding: 3% 0;
 }
-.hackathon-container{
-  background: #232323;
-  margin: 2%;
-  padding: 4%;
-  border-radius: 5px;
-  color: #65A0CD;
-  text-align: center;
-}
 img{
   width: 75%;
   margin-bottom: 5vh;
@@ -165,14 +116,19 @@ img{
   margin-left: auto;
   margin-right: auto;
   max-width: 70vh;
-  max-height: 80vh;
+  overflow-y: 0;
 }
 .carousel{
   background: none;
-  margin-bottom: 5vh;
 }
 .carousel-item{
   text-align: center;
+}
+.btn-container {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 @media (max-width: 768px){ 
   .jumbotron{

@@ -23,6 +23,7 @@ export default {
       return {
         title: 'Opportunities',
         opportunities: [
+          { id: 2, title: 'Online Hackathons on Devpost', link: 'https://devpost.com/hackathons', date: 'All the time', desc: 'Find online hackathons to participate in on Devpost.'},
           { id: 0, title: "Online Career Fair", link: "https://www.onlinecareerfair.org/p/swe?fbclid=IwAR3V5cb9sgfiXqZqf3RowBEpPYa645aRwU2-smBhidNe1a3kVrU1JO6RyIM", date: "5/25 - 6/30", desc: "\"Book free 20-minute video calls with professionals from hundreds of companies like Pepsi, Amazon, LinkedIn, and Microsoft. Get the career clarity and connections you need to feel confident about your future.\"" },
           { id: 1, title: "Diversity Reboot 2020", link: "https://events.powertofly.com/?fbclid=IwAR1fMKmskei5RYH49vOqJtgVe4j8Hm-6jWxR7RpK2Tq695h11nBhDG877ik", date: "6/15 - 6/18", desc: "\"Diversity Reboot 2020 is the free virtual gathering for women, allies, policymakers and business leaders who understand that talk is cheap: jobs and commitments from leaders are what we need now.\" <strong>Including a virtual career fair and speakers.</strong>" }
         ]
