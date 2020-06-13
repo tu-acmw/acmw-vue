@@ -20,9 +20,9 @@ export default {
   data () {
     return {
       navs: [
-        {text: 'About', link: '#about'},
         {text: 'Events', link: '#events'},
         {text: 'Opportunities', link: '#opportunities'},
+        {text: 'About', link: '#about'},
         {text: 'Board', link: '#board'},
         {text: 'FAQ', link: '#faq'},
         {text: 'Connect', link: '#signup'},
@@ -40,12 +40,12 @@ export default {
   margin: 0; 
 }
 nav{
-  text-transform: uppercase;
+  text-transform: lowercase;
   min-height: 10vh;
   background: #232323;
 }
 a, i, .navbar-brand{
-  font-weight: none;
+  font-weight: bold;
   letter-spacing: 0em;
   color: #d7d5d9; 
   -webkit-transition: all 0.2s ease-out;

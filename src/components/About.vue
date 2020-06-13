@@ -2,9 +2,6 @@
   <div id="about">
     <div class="no-show"></div>
     <div class="jumbotron">
-      <h3>Unfortunately, ACM-W will not be having any more meetings for the Spring 2020 semester. See you in August 2020!</h3>
-    </div>
-    <div class="jumbotron">
       <div class="col-md-12"><h2>{{ header }}</h2></div>
       <div class="col-md-12"><p>{{ description }} <a :href="acm.url">{{ acm.desc }}</a></p></div>
   
