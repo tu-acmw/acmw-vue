@@ -26,10 +26,10 @@ export default {
       header: 'Board Members',
       members: [
         { name: 'Annalise McLarnon', position: 'President', linkedin: 'https://www.linkedin.com/in/annalise-mclarnon-38aba9bb/', img: require('@/assets/profile/annalise.jpg') },
-        { name: 'Emily Trinh', position: 'Co-Vice President', linkedin: 'https://www.linkedin.com/in/emily-trinh-755416151/', img: require('@/assets/profile/emily.jpg') },
+        { name: 'Emily Trinh', position: 'Vice President', linkedin: 'https://www.linkedin.com/in/emily-trinh-755416151/', img: require('@/assets/profile/emily.jpg') },
         //{ name: 'Ariel Pellumbi', position: 'Co-Vice President', linkedin: 'https://www.linkedin.com/in/arielapellumbi/', img: require('@/assets/profile/ariel.jpg') },
         { name: 'Megha Patel', position: 'Secretary', linkedin: 'https://www.linkedin.com/in/meghapatel99/', img: require('@/assets/profile/megha.jpg') },
-        { name: 'Mary Liu', position: 'Treasurer', linkedin: 'https://www.linkedin.com/in/mary-liu-ba3812149/', img: require('@/assets/profile/mary.jpg') },
+        { name: 'Mary Liu', position: 'Community Service Officer', linkedin: 'https://www.linkedin.com/in/mary-liu-ba3812149/', img: require('@/assets/profile/mary.jpg') },
         //{ name: 'Priyal Patel', position: 'Communications Officer', linkedin: 'https://www.linkedin.com/in/rose-keenan/', img: require('@/assets/profile/priyal.jpg') },
         { name: 'Rose Keenan', position: 'Events Coordinator', linkedin: 'https://www.linkedin.com/in/rose-keenan/', img: require('@/assets/profile/rose.jpg') },
         //{ name: 'Bianca Tuliao', position: 'Community Service Officer', linkedin: 'https://www.linkedin.com/in/biancatuliao/', img: require('@/assets/profile/bianca.jpg') },
