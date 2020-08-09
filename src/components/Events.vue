@@ -55,15 +55,17 @@ export default {
       btn: { text: 'Connect with us for updates!', class:'btn', link: '#socialmedia'},
       ths: [ "Date", "Time", "Location", "Event"],
       trs: [
-        { id: 0, date: 'TBD', time: 'TBD', location: 'TBD', meeting: 'First General Body Meeting'},
+        { id: 0, date: 'Monday, 8/31/2020', time: '3 - 4 PM', location: 'Google Meets Link TBD', meeting: 'First General Body Meeting'},
       ],
       pastevents: { btntext: 'Past Events', link: '/pastevents'},
       events: [ 
+        /*
         { id: 2, pic: require('@/assets/events/spring_2020/ghc.jpg') },
         { id: 1, pic: require('@/assets/events/spring_2020/career_fair.png') },
         { id: 0, pic: require('@/assets/events/spring_2020/gbm.png') }
+        */
       ],
-      upcomingEvent: require('@/assets/events/spring_2020/bubble_tea.jpg')
+      //upcomingEvent: require('@/assets/events/spring_2020/bubble_tea.jpg')
     }
   }
 }

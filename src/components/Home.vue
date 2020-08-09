@@ -5,7 +5,7 @@
         <img src="@/assets/acmw_logo.png" class="img-responsive rounded col-xs-12" alt="ACM-W's Logo, an owl on a laptop">
       </div>
       <div class="container">
-        <h4>Unfortunately, ACM-W will not be having any more meetings for the Spring 2020 semester. See you in August 2020!</h4>
+        <h4>ACM-W will be meeting virtually this year! <a href="#events">Click for details.</a></h4>
       </div>
     </div>
   </section>
