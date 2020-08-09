@@ -3,7 +3,7 @@
     <div class="no-show"></div>
     <div class="jumbotron">
       <div class="col-md-12"><h2>{{ header }}</h2></div>
-      <div class="col-md-12"><p>{{ description }} <a :href="acm.url">{{ acm.desc }}</a></p></div>
+      <div class="desc"><p>{{ description }} <a :href="acm.url">{{ acm.desc }}</a></p></div>
   
       <div class="grid">
         <div v-for="value in values">
@@ -53,6 +53,10 @@ h2 {
 h3 {
   color: #FFD6E3;
 }
+.desc {
+  margin-left: 20%;
+  margin-right: 20%;
+}
 .grid{
   display: inline-grid;
   grid-template-rows: 1fr 1fr;
@@ -72,6 +76,10 @@ i{
     width: 100%;
     margin: 0;
     border-radius: 0;
+  }
+  .desc {
+    margin-left: 5%;
+    margin-right: 5%;
   }
   .grid{
     display: block;

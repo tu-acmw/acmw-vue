@@ -31,7 +31,10 @@
             <tr :key="tr.id" v-for="tr in trs">
               <td>{{ tr.date }}</td>
               <td>{{ tr.time }}</td>
+              <!--
               <td>{{ tr.location }}</td>
+              -->
+              <td><a href="https://meet.google.com/ati-frdc-izg">Google Meets Link</a></td>
               <td>{{ tr.meeting }}</td>
             </tr>
           </table>
@@ -55,7 +58,7 @@ export default {
       btn: { text: 'Connect with us for updates!', class:'btn', link: '#socialmedia'},
       ths: [ "Date", "Time", "Location", "Event"],
       trs: [
-        { id: 0, date: 'Monday, 8/31/2020', time: '3 - 4 PM', location: 'Google Meets Link TBD', meeting: 'First General Body Meeting'},
+        { id: 0, date: 'Monday, 8/31/2020', time: '3 - 4 PM', location: '', meeting: 'First General Body Meeting'},
       ],
       pastevents: { btntext: 'Past Events', link: '/pastevents'},
       events: [ 

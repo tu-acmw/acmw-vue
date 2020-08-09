@@ -27,7 +27,7 @@ body, html {
   height: 100%;
 }
 h4 {
-  color: #D6C1D7;
+  color: #FFD6E3;
   text-align: center;
 }
 .main-jumbotron{
