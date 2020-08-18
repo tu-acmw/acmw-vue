@@ -68,7 +68,7 @@ export default {
         { id: 0, pic: require('@/assets/events/spring_2020/gbm.png') }
         */
       ],
-      //upcomingEvent: require('@/assets/events/spring_2020/bubble_tea.jpg')
+      upcomingEvent: require('@/assets/events/fall_2020/gbm.png')
     }
   }
 }
