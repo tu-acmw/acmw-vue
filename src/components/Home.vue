@@ -5,7 +5,7 @@
         <img src="@/assets/acmw_logo.png" class="img-responsive rounded col-xs-12" alt="ACM-W's Logo, an owl on a laptop">
       </div>
       <div class="container">
-        <h4>ACM-W will be meeting virtually this year! <a href="#events">Click for details.</a></h4>
+        <h4>ACM-W will be meeting virtually this year!<br> <a href="https://meet.google.com/ati-frdc-izg">Click to join the meeting.</a></h4>
       </div>
     </div>
   </section>
