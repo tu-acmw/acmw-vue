@@ -23,7 +23,7 @@ export default {
       return {
         title: 'Opportunities',
         opportunities: [
-          { id: 2, title: 'Online Hackathons on Devpost', link: 'https://devpost.com/hackathons', date: 'All the time', desc: 'Find online hackathons to participate in on Devpost.'}
+          { id: 0, title: 'OwlHacks', link: 'https://owlhacks.com', date: 'October 17-18', desc: 'Join us virtually for an awesome hackathon!'}
         ]
       }
   }

@@ -34,7 +34,7 @@ export default {
       questions: [
         { num: 'one', target: '#one', q: 'How do I join?', a: 'You can sign up to <a href="#signup">our mailing list</a> and introduce yourself at our next meeting.'},
         { num: 'two', target: '#two', q: 'Is membership free?', a: 'Yes!'},
-        { num: 'three', target: '#three', q: 'Where/When are your meetings?', a: 'In the Student Education and Research Center (SERC) Rm 358 every Monday* from 3-4PM excluding holidays & breaks, unless stated otherwise.'},
+        { num: 'three', target: '#three', q: 'Where/When are your meetings?', a: 'During the Fall 2020 semester, we will be entirely virtual and will be meeting using <a href="https://meet.google.com/ati-frdc-izg">this Google Meets link</a> every Monday* from 3-4PM excluding holidays & breaks, unless stated otherwise. Under normal circumstances, we meet in the Student Education and Research Center (SERC) Rm 358.'},
         { num: 'four', target: '#four',  q: 'Can guys join too?', a: 'Yes. ACM-W is an organization centered around women in technology, but is not limited to only women.'},
         { num: 'five', target: '#five', q: "What's your relationship with ACM?", a: 'ACM and ACM-W are student chapters of the national Association of Computing Machinery. ACM-W focuses on women in computing, while ACM focuses on computing as a whole. We encourage membership in both organizations because of the unique experience each offers. <a href="https://acm.temple.edu/">Learn more about ACM.</a>'},    
         { num: 'six', target: '#six', q: 'How can I leave feedback/suggestions?', a: 'You can send us feedback/suggestions on <a href="https://goo.gl/forms/AeBk6ST8iEqxRUvL2">our feedback form</a>.'}
