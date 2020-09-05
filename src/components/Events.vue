@@ -58,7 +58,9 @@ export default {
       btn: { text: 'Connect with us for updates!', class:'btn', link: '#socialmedia'},
       ths: [ "Date", "Time", "Location", "Event"],
       trs: [
-        { id: 0, date: 'Monday, 8/31/2020', time: '3 - 4 PM', location: '', meeting: 'First General Body Meeting'},
+        { id: 0, date: 'Monday, 8/31/2020', time: '3 - 4 PM', location: '', meeting: 'General Body Meeting'},
+        { id: 0, date: 'Monday, 9/14/2020', time: '3 - 4 PM', location: '', meeting: 'General Body Meeting'},
+        { id: 0, date: 'Monday, 9/21/2020', time: '3 - 4 PM', location: '', meeting: 'General Body Meeting'},
       ],
       pastevents: { btntext: 'Past Events', link: '/pastevents'},
       events: [ 
