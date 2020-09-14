@@ -59,18 +59,17 @@ export default {
       ths: [ "Date", "Time", "Location", "Event"],
       trs: [
         { id: 0, date: 'Monday, 8/31/2020', time: '3 - 4 PM', location: '', meeting: 'General Body Meeting'},
-        { id: 0, date: 'Monday, 9/14/2020', time: '3 - 4 PM', location: '', meeting: 'General Body Meeting'},
-        { id: 0, date: 'Monday, 9/21/2020', time: '3 - 4 PM', location: '', meeting: 'General Body Meeting'},
+        { id: 0, date: 'Monday, 9/14/2020', time: '3 - 4 PM', location: '', meeting: 'Sip & Chat'},
+        { id: 0, date: 'Monday, 9/21/2020', time: '3 - 4 PM', location: '', meeting: 'Career Fair Prep'},
       ],
       pastevents: { btntext: 'Past Events', link: '/pastevents'},
       events: [ 
-        /*
+        { id: 3, pic: require('@/assets/events/fall_2020/gbm.png') },
         { id: 2, pic: require('@/assets/events/spring_2020/ghc.jpg') },
         { id: 1, pic: require('@/assets/events/spring_2020/career_fair.png') },
         { id: 0, pic: require('@/assets/events/spring_2020/gbm.png') }
-        */
       ],
-      upcomingEvent: require('@/assets/events/fall_2020/gbm.png')
+      upcomingEvent: require('@/assets/events/fall_2020/sip&chat.png')
     }
   }
 }
