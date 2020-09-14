@@ -23,6 +23,8 @@ export default {
       return {
         title: 'Opportunities',
         opportunities: [
+          { id: 0, title: 'CST Virtual Technology Employer Meet Up', link: 'https://temple.joinhandshake.com/events/567954?utm_source=Email_marketing&utm_campaign=Friday_September_11_2020&cmp=1&utm_medium=HTMLEmail', date: 'September 25', desc: 'Spend an afternoon talking with employers who will be attending the CST Virtual Technology Job Fair! You will have the ability to meet with multiple employers to learn about their organizations and their available opportunities.'}
+          { id: 0, title: 'Virtual College of Science and Technology Fall 2020 Technology Job Fair', link: 'https://temple.joinhandshake.com/career_fairs/16755?register=true&mass_email_id=647406&lor=3&utm_source=mass_mailer&utm_medium=email&utm_content=647406&utm_campaign=uni_targeted_emails', date: 'October 2', desc: 'The Virtual College of Science and Technology Fall 2020 Technology Job Fair is open to all CST students and alumni seeking an internship or full-time position with an employer who is seeking to hire technology students. '},
           { id: 0, title: 'OwlHacks', link: 'https://owlhacks.com', date: 'October 17-18', desc: 'Join us virtually for an awesome hackathon!'}
         ]
       }
