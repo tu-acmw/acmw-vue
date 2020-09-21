@@ -31,10 +31,7 @@
             <tr :key="tr.id" v-for="tr in trs">
               <td>{{ tr.date }}</td>
               <td>{{ tr.time }}</td>
-              <!--
-              <td>{{ tr.location }}</td>
-              -->
-              <td><a href="https://meet.google.com/ati-frdc-izg">Google Meets Link</a></td>
+              <td><a :href="tr.location">Click to Join</a></td>
               <td>{{ tr.meeting }}</td>
             </tr>
           </table>
@@ -58,18 +55,18 @@ export default {
       btn: { text: 'Connect with us for updates!', class:'btn', link: '#socialmedia'},
       ths: [ "Date", "Time", "Location", "Event"],
       trs: [
-        { id: 0, date: 'Monday, 8/31/2020', time: '3 - 4 PM', location: '', meeting: 'General Body Meeting'},
-        { id: 0, date: 'Monday, 9/14/2020', time: '3 - 4 PM', location: '', meeting: 'Sip & Chat'},
-        { id: 0, date: 'Monday, 9/21/2020', time: '3 - 4 PM', location: '', meeting: 'Career Fair Prep'},
+        { id: 0, date: 'Monday, 9/21/2020', time: '3 - 4 PM EST', location: 'https://meet.google.com/ati-frdc-izg', meeting: 'Career Fair Prep'},
+        { id: 0, date: 'Thursday, 9/24/2020', time: '5 - 6 PM EST', location: 'https://temple.zoom.us/j/95065564295', meeting: 'Protiviti'},
       ],
       pastevents: { btntext: 'Past Events', link: '/pastevents'},
       events: [ 
+        { id: 3, pic: require('@/assets/events/fall_2020/sip&chat.png') },
         { id: 3, pic: require('@/assets/events/fall_2020/gbm.png') },
         { id: 2, pic: require('@/assets/events/spring_2020/ghc.jpg') },
         { id: 1, pic: require('@/assets/events/spring_2020/career_fair.png') },
         { id: 0, pic: require('@/assets/events/spring_2020/gbm.png') }
       ],
-      upcomingEvent: require('@/assets/events/fall_2020/sip&chat.png')
+      upcomingEvent: require('@/assets/events/fall_2020/career-fair.png')
     }
   }
 }
