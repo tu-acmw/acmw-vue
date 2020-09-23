@@ -56,7 +56,7 @@ export default {
       ths: [ "Date", "Time", "Location", "Event"],
       trs: [
         { id: 0, date: 'Monday, 9/21/2020', time: '3 - 4 PM EST', location: 'https://meet.google.com/ati-frdc-izg', meeting: 'Career Fair Prep'},
-        { id: 0, date: 'Thursday, 9/24/2020', time: '5 - 6 PM EST', location: 'https://temple.zoom.us/j/95065564295', meeting: 'Protiviti'},
+        { id: 0, date: 'Thursday, 9/24/2020', time: '5 - 6:30 PM EST', location: 'https://temple.zoom.us/j/95065564295', meeting: 'Protiviti'},
       ],
       pastevents: { btntext: 'Past Events', link: '/pastevents'},
       events: [ 
