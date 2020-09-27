@@ -6,9 +6,9 @@
       </div>
       <div class="container">
         <div>
-          <h3>Join ACM & ACM-W in getting to know Protiviti</h3>
-          <h3>Thursday 9/24 5 - 6:30 PM</h3>
-          <h4><a href="https://temple.zoom.us/j/95065564295"><i class="far fa-hand-pointer"></i> Click here to join the meeting! <br>(Join with Temple email)</a></h4>
+          <h3>Join ACM & ACM-W for Homework Night</h3>
+          <h3>Monday 9/28 3 - 4 PM EST</h3>
+          <h4><a href="https://meet.google.com/ati-frdc-izg"><i class="far fa-hand-pointer"></i> Click here to join the meeting! <br>(Join with Temple email)</a></h4>
         </div>
       </div>
     </div>
