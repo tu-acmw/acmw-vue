@@ -55,19 +55,20 @@ export default {
       btn: { text: 'Connect with us for updates!', class:'btn', link: '#socialmedia'},
       ths: [ "Date", "Time", "Location", "Event"],
       trs: [
-        { id: 0, date: 'Monday, 9/21/2020', time: '3 - 4 PM EST', location: 'https://meet.google.com/ati-frdc-izg', meeting: 'Career Fair Prep'},
-        { id: 0, date: 'Thursday, 9/24/2020', time: '5 - 6:30 PM EST', location: 'https://temple.zoom.us/j/95065564295', meeting: 'Protiviti'},
-        { id: 0, date: 'Monday, 9/28/2020', time: '3 - 4 PM EST', location: 'https://meet.google.com/ati-frdc-izg', meeting: 'Homework Night'},
+        { id: 0, date: 'Monday, 10/5/2020', time: '3 - 4 PM EST', location: 'https://meet.google.com/ati-frdc-izg', meeting: 'Internship Panel'},
+        { id: 0, date: 'Monday, 10/12/2020', time: '3 - 4 PM EST', location: 'https://meet.google.com/ati-frdc-izg', meeting: 'TBD'},
       ],
       pastevents: { btntext: 'Past Events', link: '/pastevents'},
       events: [ 
+        { id: 3, pic: require('@/assets/events/fall_2020/hw-night.png') },
+        { id: 3, pic: require('@/assets/events/fall_2020/career-fair.png') },
         { id: 3, pic: require('@/assets/events/fall_2020/sip&chat.png') },
         { id: 3, pic: require('@/assets/events/fall_2020/gbm.png') },
         { id: 2, pic: require('@/assets/events/spring_2020/ghc.jpg') },
         { id: 1, pic: require('@/assets/events/spring_2020/career_fair.png') },
         { id: 0, pic: require('@/assets/events/spring_2020/gbm.png') }
       ],
-      upcomingEvent: require('@/assets/events/fall_2020/career-fair.png')
+      upcomingEvent: require('@/assets/events/fall_2020/intern-panel.png')
     }
   }
 }
