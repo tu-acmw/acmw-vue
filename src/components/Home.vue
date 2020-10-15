@@ -6,9 +6,9 @@
       </div>
       <div class="container">
         <div>
-          <h3>Join ACM-W for Among Us!</h3>
-          <h3>Monday 10/12 3 - 4 PM EST</h3>
-          <h4><a href="https://temple.zoom.us/j/93833159419"><i class="far fa-hand-pointer"></i> Click here to join the meeting! <br>(Join with Temple email)</a></h4>
+          <h3>Join ACM-W for Homework Night</h3>
+          <h3>Monday 10/19 3 - 4 PM EST</h3>
+          <h4><a href="https://meet.google.com/ati-frdc-izg"><i class="far fa-hand-pointer"></i> Click here to join the meeting! <br>(Join with Temple email)</a></h4>
         </div>
       </div>
     </div>
