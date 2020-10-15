@@ -56,7 +56,8 @@ export default {
       ths: [ "Date", "Time", "Location", "Event"],
       trs: [
         { id: 0, date: 'Monday, 10/12/2020', time: '3 - 4 PM EST', location: 'https://temple.zoom.us/j/93833159419', meeting: 'Game Night'},
-        { id: 0, date: 'Monday, 10/17/2020', time: '3 - 4 PM EST', location: 'https://meet.google.com/ati-frdc-izg', meeting: 'Technical Interview Prep'},
+        { id: 0, date: 'Monday, 10/19/2020', time: '3 - 4 PM EST', location: 'https://meet.google.com/ati-frdc-izg', meeting: 'Homework Night'},
+        { id: 0, date: 'Monday, 10/26/2020', time: '3 - 4 PM EST', location: 'https://meet.google.com/ati-frdc-izg', meeting: 'Technical Interview Prep'},
       ],
       pastevents: { btntext: 'Past Events', link: '/pastevents'},
       events: [ 
