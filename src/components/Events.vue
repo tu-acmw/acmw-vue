@@ -61,6 +61,7 @@ export default {
       ],
       pastevents: { btntext: 'Past Events', link: '/pastevents'},
       events: [ 
+        { id: 3, pic: require('@/assets/events/fall_2020/among-us.jpg') },
         { id: 3, pic: require('@/assets/events/fall_2020/intern-panel.png') },
         { id: 3, pic: require('@/assets/events/fall_2020/hw-night.png') },
         { id: 3, pic: require('@/assets/events/fall_2020/career-fair.png') },
@@ -70,7 +71,7 @@ export default {
         { id: 1, pic: require('@/assets/events/spring_2020/career_fair.png') },
         { id: 0, pic: require('@/assets/events/spring_2020/gbm.png') }
       ],
-      upcomingEvent: require('@/assets/events/fall_2020/among-us.jpg')
+      upcomingEvent: require('@/assets/events/fall_2020/hw-night-2.png')
     }
   }
 }
