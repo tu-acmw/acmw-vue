@@ -8,7 +8,7 @@
         <div>
           <h3>Join ACM-W for Technical Interview Prep</h3>
           <h3>Monday 10/26 3 - 4 PM EST</h3>
-          <h4><a href="https://meet.google.com/ati-frdc-izg"><i class="far fa-hand-pointer"></i> Click here to join the meeting! <br>(Join with Temple email)</a></h4>
+          <h4><a href="https://temple.zoom.us/j/93833159419"><i class="far fa-hand-pointer"></i> Click here to join the meeting! <br>(Join with Temple email)</a></h4>
         </div>
       </div>
     </div>
