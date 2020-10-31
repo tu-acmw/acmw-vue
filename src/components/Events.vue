@@ -55,12 +55,12 @@ export default {
       btn: { text: 'Connect with us for updates!', class:'btn', link: '#socialmedia'},
       ths: [ "Date", "Time", "Location", "Event"],
       trs: [
-        //{ id: 0, date: 'Monday, 10/12/2020', time: '3 - 4 PM EST', location: 'https://temple.zoom.us/j/93833159419', meeting: 'Game Night'},
-        { id: 0, date: 'Monday, 10/26/2020', time: '3 - 4 PM EST', location: 'https://temple.zoom.us/j/93833159419', meeting: 'Technical Interview Prep'},
         { id: 0, date: 'Monday, 11/2/2020', time: '3 - 4 PM EST', location: 'https://temple.zoom.us/j/93833159419', meeting: 'Q&A'},
+        { id: 0, date: 'Monday, 11/2/2020', time: '3 - 4 PM EST', location: 'https://temple.zoom.us/j/93833159419', meeting: 'TBD'}
       ],
       pastevents: { btntext: 'Past Events', link: '/pastevents'},
       events: [ 
+        { id: 3, pic: require('@/assets/events/fall_2020/tech-interview-prep.jpg') },
         { id: 3, pic: require('@/assets/events/fall_2020/hw-night-2.png') },
         { id: 3, pic: require('@/assets/events/fall_2020/among-us.jpg') },
         { id: 3, pic: require('@/assets/events/fall_2020/intern-panel.png') },
@@ -72,7 +72,7 @@ export default {
         { id: 1, pic: require('@/assets/events/spring_2020/career_fair.png') },
         { id: 0, pic: require('@/assets/events/spring_2020/gbm.png') }
       ],
-      upcomingEvent: require('@/assets/events/fall_2020/tech-interview-prep.jpg')
+      upcomingEvent: require('@/assets/events/fall_2020/q&a.png')
     }
   }
 }
