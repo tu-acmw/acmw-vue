@@ -56,7 +56,7 @@ export default {
       ths: [ "Date", "Time", "Location", "Event"],
       trs: [
         { id: 0, date: 'Monday, 11/2/2020', time: '3 - 4 PM EST', location: 'https://temple.zoom.us/j/93833159419', meeting: 'Q&A'},
-        { id: 0, date: 'Monday, 11/2/2020', time: '3 - 4 PM EST', location: 'https://temple.zoom.us/j/93833159419', meeting: 'TBD'}
+        { id: 0, date: 'Monday, 11/9/2020', time: '3 - 4 PM EST', location: 'https://temple.zoom.us/j/93833159419', meeting: 'TBD'}
       ],
       pastevents: { btntext: 'Past Events', link: '/pastevents'},
       events: [ 
