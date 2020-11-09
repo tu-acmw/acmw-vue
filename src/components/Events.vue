@@ -55,11 +55,12 @@ export default {
       btn: { text: 'Connect with us for updates!', class:'btn', link: '#socialmedia'},
       ths: [ "Date", "Time", "Location", "Event"],
       trs: [
-        { id: 0, date: 'Monday, 11/2/2020', time: '3 - 4 PM EST', location: 'https://temple.zoom.us/j/93833159419', meeting: 'Q&A'},
-        { id: 0, date: 'Monday, 11/9/2020', time: '3 - 4 PM EST', location: 'https://temple.zoom.us/j/93833159419', meeting: 'TBD'}
+        { id: 0, date: 'Monday, 11/9/2020', time: '3 - 4 PM EST', location: 'https://temple.zoom.us/j/93833159419', meeting: ' Reviewing a Job Offer & LinkedIn 101'},
+        { id: 0, date: 'Monday, 11/16/2020', time: '5:30 - 6:30 PM EST', location: 'https://temple.zoom.us/j/93833159419', meeting: 'Women in Cyber Panel'}
       ],
       pastevents: { btntext: 'Past Events', link: '/pastevents'},
       events: [ 
+        { id: 3, pic: require('@/assets/events/fall_2020/q&a.png') },
         { id: 3, pic: require('@/assets/events/fall_2020/tech-interview-prep.jpg') },
         { id: 3, pic: require('@/assets/events/fall_2020/hw-night-2.png') },
         { id: 3, pic: require('@/assets/events/fall_2020/among-us.jpg') },
@@ -67,12 +68,9 @@ export default {
         { id: 3, pic: require('@/assets/events/fall_2020/hw-night.png') },
         { id: 3, pic: require('@/assets/events/fall_2020/career-fair.png') },
         { id: 3, pic: require('@/assets/events/fall_2020/sip&chat.png') },
-        { id: 3, pic: require('@/assets/events/fall_2020/gbm.png') },
-        { id: 2, pic: require('@/assets/events/spring_2020/ghc.jpg') },
-        { id: 1, pic: require('@/assets/events/spring_2020/career_fair.png') },
-        { id: 0, pic: require('@/assets/events/spring_2020/gbm.png') }
+        { id: 3, pic: require('@/assets/events/fall_2020/gbm.png') }
       ],
-      upcomingEvent: require('@/assets/events/fall_2020/q&a.png')
+      upcomingEvent: require('@/assets/events/fall_2020/professional_development.jpg')
     }
   }
 }

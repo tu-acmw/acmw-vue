@@ -6,8 +6,8 @@
       </div>
       <div class="container">
         <div>
-          <h3>Join ACM-W for E-Board Info Session</h3>
-          <h3>Monday 10/26 3 - 4 PM EST</h3>
+          <h3>Join ACM-W for Reviewing a Job Offer & LinkedIn 101</h3>
+          <h3>Monday 11/9 3 - 4 PM EST</h3>
           <h4><a href="https://temple.zoom.us/j/93833159419"><i class="far fa-hand-pointer"></i> Click here to join the meeting! <br>(Join with Temple email)</a></h4>
         </div>
       </div>
