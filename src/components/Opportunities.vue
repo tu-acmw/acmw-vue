@@ -23,9 +23,6 @@ export default {
       return {
         title: 'Opportunities',
         opportunities: [
-
-          { id: 2, title: 'OwlHacks', link: 'https://owlhacks.com', date: 'October 17-18', desc: 'Join us virtually for an awesome hackathon!'},
-          { id: 2, title: 'The No Limits Leadership Women in Tech Experience', link: 'https://talentandeducation.com/resources-for-students/women-in-tech-event/', date: 'November 13', desc: 'Main Line Chamber of Commerce invites Temple women in tech to register for the No Limits Leadership Women in Tech Experience. Check out the keynotes, panelists, career fair and interviews planned for 9am - 3pm on Friday, November 13th. **The deadline is October 15th (applications still being accepted even though the deadline says 9/15).**'},
           { id: 2, title: 'TechGirlz Workshop - Make a Website with HTML/CSS', link: 'https://forms.gle/Eadzgujgzknyxrfa6', date: 'November 21 @ 10:30 AM - 12:30 PM EST', desc: 'ACM-W/ACM will be hosting TechGirlz workshop virtually for middle school girls! If you would be interested in volunteering please fill out the form using the link. This is a great opportunity to get some experience on your resume and also help a great cause.'},
           { id: 2, title: 'TechGirlz Workshop - Learning JavaScript', link: 'https://forms.gle/Eadzgujgzknyxrfa6', date: 'November 28 @ 10:30 AM - 12:30 PM EST', desc: 'ACM-W/ACM will be hosting TechGirlz workshop virtually for middle school girls! If you would be interested in volunteering please fill out the form using the link. This is a great opportunity to get some experience on your resume and also help a great cause.'}
         ]
