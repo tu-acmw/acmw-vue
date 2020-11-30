@@ -49,6 +49,7 @@ export default {
       socialmedias: [
         { id: 0, icon: 'fa-instagram', link: 'https://www.instagram.com/tuacm_w/' },
         { id: 1, icon: 'fa-facebook-square', link: 'https://www.facebook.com/templeuniversityacmw9/' },
+        { id: 1, icon: 'fa-discord', link: 'https://discord.gg/QtKzJGmmCp' },
       ],
       footer: 'Made with <i class="fa fa-heart"></i> by <a href="https://annicachiu.com">Annica</a> and formerly <a href="https://github.com/hanaxu">Hana</a>'
 
