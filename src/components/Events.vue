@@ -60,6 +60,7 @@ export default {
       ],
       pastevents: { btntext: 'Past Events', link: '/pastevents'},
       events: [ 
+        { id: 3, pic: require('@/assets/events/fall_2020/cyber-panel.png') },
         { id: 3, pic: require('@/assets/events/fall_2020/professional-development.jpg') },
         { id: 3, pic: require('@/assets/events/fall_2020/q&a.png') },
         { id: 3, pic: require('@/assets/events/fall_2020/tech-interview-prep.jpg') },
@@ -71,7 +72,7 @@ export default {
         { id: 3, pic: require('@/assets/events/fall_2020/sip&chat.png') },
         { id: 3, pic: require('@/assets/events/fall_2020/gbm.png') }
       ],
-      upcomingEvent: require('@/assets/events/fall_2020/cyber-panel.png')
+      upcomingEvent: require('@/assets/events/fall_2020/stress-relief-finals.jpg')
     }
   }
 }
