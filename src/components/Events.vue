@@ -55,8 +55,9 @@ export default {
       btn: { text: 'Connect with us for updates!', class:'btn', link: '#socialmedia'},
       ths: [ "Date", "Time", "Location", "Event"],
       trs: [
-        { id: 0, date: 'Monday, 11/30/2020', time: '3 - 4 PM EST', location: 'https://temple.zoom.us/j/93833159419', meeting: 'Among Us'},
-        { id: 0, date: 'Monday, 12/7/2020', time: '3 - 4 PM EST', location: 'https://temple.zoom.us/j/93833159419', meeting: 'Tips for Self Care During Finals & Virtual Bob Ross Paint Night'},
+        { id: 0, date: 'TBD', time: 'TBD', location: 'https://temple.zoom.us/j/93833159419', meeting: 'TBD'},
+        //{ id: 0, date: 'Monday, 11/30/2020', time: '3 - 4 PM EST', location: 'https://temple.zoom.us/j/93833159419', meeting: 'Among Us'},
+        //{ id: 0, date: 'Monday, 12/7/2020', time: '3 - 4 PM EST', location: 'https://temple.zoom.us/j/93833159419', meeting: 'Tips for Self Care During Finals & Virtual Bob Ross Paint Night'},
       ],
       pastevents: { btntext: 'Past Events', link: '/pastevents'},
       events: [ 
@@ -78,7 +79,7 @@ export default {
 }
 </script>
 
-<style scoped>
+ <style scoped>
 .jumbotron{
   width: 85%;
   background: transparent;
