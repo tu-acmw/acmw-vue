@@ -55,30 +55,20 @@ export default {
       btn: { text: 'Connect with us for updates!', class:'btn', link: '#socialmedia'},
       ths: [ "Date", "Time", "Location", "Event"],
       trs: [
-        { id: 0, date: 'Monday, 11/30/2020', time: '3 - 4 PM EST', location: 'https://temple.zoom.us/j/93833159419', meeting: 'Among Us'},
-        { id: 0, date: 'Monday, 12/7/2020', time: '3 - 4 PM EST', location: 'https://temple.zoom.us/j/93833159419', meeting: 'Tips for Self Care During Finals & Virtual Bob Ross Paint Night'},
+        { id: 0, date: '2/1/2021', time: '5 PM - 6 PM', location: 'https://temple.zoom.us/j/93833159419', meeting: 'General Body Meeting'},
+        //{ id: 0, date: 'Monday, 11/30/2020', time: '3 - 4 PM EST', location: 'https://temple.zoom.us/j/93833159419', meeting: 'Among Us'},
+        //{ id: 0, date: 'Monday, 12/7/2020', time: '3 - 4 PM EST', location: 'https://temple.zoom.us/j/93833159419', meeting: 'Tips for Self Care During Finals & Virtual Bob Ross Paint Night'},
       ],
       pastevents: { btntext: 'Past Events', link: '/pastevents'},
       events: [ 
-        { id: 3, pic: require('@/assets/events/fall_2020/cyber-panel.png') },
-        { id: 3, pic: require('@/assets/events/fall_2020/professional-development.jpg') },
-        { id: 3, pic: require('@/assets/events/fall_2020/q&a.png') },
-        { id: 3, pic: require('@/assets/events/fall_2020/tech-interview-prep.jpg') },
-        { id: 3, pic: require('@/assets/events/fall_2020/hw-night-2.png') },
-        { id: 3, pic: require('@/assets/events/fall_2020/among-us.jpg') },
-        { id: 3, pic: require('@/assets/events/fall_2020/intern-panel.png') },
-        { id: 3, pic: require('@/assets/events/fall_2020/hw-night.png') },
-        { id: 3, pic: require('@/assets/events/fall_2020/career-fair.png') },
-        { id: 3, pic: require('@/assets/events/fall_2020/sip&chat.png') },
-        { id: 3, pic: require('@/assets/events/fall_2020/gbm.png') }
       ],
-      upcomingEvent: require('@/assets/events/fall_2020/stress-relief-finals.jpg')
+      upcomingEvent: require('@/assets/events/spring_2021/gbm1.png')
     }
   }
 }
 </script>
 
-<style scoped>
+ <style scoped>
 .jumbotron{
   width: 85%;
   background: transparent;
