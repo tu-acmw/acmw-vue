@@ -2,7 +2,9 @@
   <div id="app">
     <Navbar></Navbar>
     <Home></Home>
-    <Events></Events>
+    <!--
+      <Events></Events>
+    -->
     <Opportunities></Opportunities>
     <About></About>
     <Board></Board>
