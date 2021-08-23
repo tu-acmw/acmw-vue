@@ -55,15 +55,12 @@ export default {
       btn: { text: 'Connect with us for updates!', class:'btn', link: '#socialmedia'},
       ths: [ "Date", "Time", "Location", "Event"],
       trs: [
-        { id: 0, date: '2/1/2021', time: '5 PM - 6 PM', location: 'https://temple.zoom.us/j/93833159419', meeting: 'General Body Meeting'},
-        { id: 0, date: '2/8/2021', time: '5 PM - 6 PM', location: 'https://temple.zoom.us/j/93833159419', meeting: 'Homework Night'},
-        { id: 0, date: '2/15/2021', time: '5 PM - 6 PM', location: 'https://temple.zoom.us/j/93833159419', meeting: 'Tech Interview Prep'},
         //{ id: 0, date: 'Monday, 11/30/2020', time: '3 - 4 PM EST', location: 'https://temple.zoom.us/j/93833159419', meeting: 'Among Us'},
         //{ id: 0, date: 'Monday, 12/7/2020', time: '3 - 4 PM EST', location: 'https://temple.zoom.us/j/93833159419', meeting: 'Tips for Self Care During Finals & Virtual Bob Ross Paint Night'},
       ],
       pastevents: { btntext: 'Past Events', link: '/pastevents'},
       events: [ 
-        { id: 0, pic: require('@/assets/events/spring_2021/gbm1.png') }
+        // { id: 0, pic: require('@/assets/events/spring_2021/gbm1.png') }
       ],
       upcomingEvent: require('@/assets/events/spring_2021/homeworknight28.png')
     }
