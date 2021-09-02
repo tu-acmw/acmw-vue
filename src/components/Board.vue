@@ -25,18 +25,66 @@ export default {
     return{
       header: 'Board Members',
       members: [
-        { name: 'Annalise McLarnon', position: 'President', linkedin: 'https://www.linkedin.com/in/annalise-mclarnon-38aba9bb/', img: require('@/assets/profile/annalise.jpg') },
-        { name: 'Emily Trinh', position: 'Vice President', linkedin: 'https://www.linkedin.com/in/emily-trinh-755416151/', img: require('@/assets/profile/emily.jpg') },
-        //{ name: 'Ariel Pellumbi', position: 'Co-Vice President', linkedin: 'https://www.linkedin.com/in/arielapellumbi/', img: require('@/assets/profile/ariel.jpg') },
-        { name: 'Megha Patel', position: 'Secretary', linkedin: 'https://www.linkedin.com/in/meghapatel99/', img: require('@/assets/profile/megha.jpg') },
-        { name: 'Mary Liu', position: 'Community Service Officer', linkedin: 'https://www.linkedin.com/in/mary-liu-ba3812149/', img: require('@/assets/profile/mary.jpg') },
-        //{ name: 'Priyal Patel', position: 'Communications Officer', linkedin: 'https://www.linkedin.com/in/rose-keenan/', img: require('@/assets/profile/priyal.jpg') },
-        { name: 'Rose Keenan', position: 'Events Coordinator', linkedin: 'https://www.linkedin.com/in/rose-keenan/', img: require('@/assets/profile/rose.jpg') },
-        //{ name: 'Bianca Tuliao', position: 'Community Service Officer', linkedin: 'https://www.linkedin.com/in/biancatuliao/', img: require('@/assets/profile/bianca.jpg') },
-        //{ name: 'Zakia Hossain', position: 'Fundraising Chair', linkedin: 'https://www.linkedin.com/in/zakia-hossain/', img: require('@/assets/profile/zakia.jpg') },
-        //{ name: 'Jane Chen', position: 'Stars Coordinator', linkedin: 'https://www.linkedin.com/in/janeechenn/', img: require('@/assets/profile/jane.jpg') },
-        { name: 'Jiayi Yin', position: 'TSG Representative', linkedin: 'https://www.linkedin.com/in/jiayi-yin-65a27a195/', img: require('@/assets/profile/jiayi.jpg') },
-        { name: 'Annica Chiu', position: 'Webmaster', linkedin: 'https://www.linkedin.com/in/annica-chiu-45369a17b/', img: require('@/assets/profile/annica.jpg') }
+        {
+          name: "Annica Chiu",
+          position: "President",
+          linkedin: "https://www.linkedin.com/in/annicachiu/",
+          img: require("@/assets/profile/annica.png"),
+        },
+        {
+          name: "Dariia Dragunova",
+          position: "Co-Vice President",
+          linkedin: "https://www.linkedin.com/in/dariiadragunova/",
+          img: require("@/assets/acmw_logo.png"),
+        }, //Need profile picture
+        {
+          name: "Erin Ross",
+          position: "Co-Vice President",
+          linkedin: "https://www.linkedin.com/in/erin-c-ross/",
+          img: require("@/assets/profile/erin.png"),
+        },
+        {
+          name: "Hadassah Galapo",
+          position: "Secretary",
+          linkedin: "https://www.linkedin.com/in/hadassah-galapo-4100b61b8/",          
+          img: require("@/assets/profile/dassie.png"),
+        }, //Need profile picture
+        {
+          name: "Jackie Gan",
+          position: "Treasurer",
+          linkedin: "https://www.linkedin.com/in/jiajingan/",
+          img: require("@/assets/profile/jackie.png"),
+        }, 
+        {
+          name: "Delanie Wolff",
+          position: "Events and Community Service Officer Coordinator",
+          linkedin: "https://www.linkedin.com/in/delaniewolff/",          
+          img: require("@/assets/acmw_logo.png"),
+        }, // Need profile picture
+        {
+          name: "Khushi Patel",
+          position: "STARS Coordinator",
+          linkedin: "https://www.linkedin.com/in/khushipatel6/",
+          img: require("@/assets/profile/khushi.png"),
+        },
+        {
+          name: "Jasmine Liu",
+          position: "TSG Representative",
+          linkedin: "https://www.linkedin.com/in/liu-jasmine/",
+          img: require("@/assets/acmw_logo.png"),
+        }, //Need linked and profile picture
+        {
+          name: "Jiayi Yin",
+          position: "Co-Webmaster",
+          linkedin: "https://www.linkedin.com/in/jiayi-yin-65a27a195/",
+          img: require("@/assets/profile/jiayi.jpg"),
+        },
+        {
+          name: "Yael Galapo",
+          position: "Co-Webmaster",
+          linkedin: "",
+          img: require("@/assets/acmw_logo.png"),
+        }, //Need linkedin and profile picture
       ]
     }  
   },
