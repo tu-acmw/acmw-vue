@@ -4,8 +4,8 @@
     <Home></Home>
     <!--
     <Events></Events>
-    -->
     <Opportunities></Opportunities>
+    -->
     <About></About>
     <Board></Board>
     <Faq></Faq>
