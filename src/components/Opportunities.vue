@@ -24,8 +24,7 @@ export default {
         title: 'Opportunities',
         opportunities: [
           { id: 2, title: 'TechGirlz Workshop - TBD', link: 'https://forms.gle/Eadzgujgzknyxrfa6', date: '03/13 @ 4:30 AM - 6:30 PM EST', desc: 'ACM-W/ACM will be hosting TechGirlz workshop virtually for middle school girls! If you would be interested in volunteering please fill out the form using the link. This is a great opportunity to get some experience on your resume and also help a great cause.'},
-          { id: 2, title: 'TechGirlz Workshop - TBD', link: 'https://forms.gle/Eadzgujgzknyxrfa6', date: '03/20 @ 4:30 AM - 6:30 PM EST', desc: 'ACM-W/ACM will be hosting TechGirlz workshop virtually for middle school girls! If you would be interested in volunteering please fill out the form using the link. This is a great opportunity to get some experience on your resume and also help a great cause.'},
-          //{ id: 2, title: 'Title', link: 'https://forms.gle/Eadzgujgzknyxrfa6', date: 'time', desc: 'description'},
+          { id: 2, title: 'TechGirlz Workshop - TBD', link: 'https://forms.gle/Eadzgujgzknyxrfa6', date: '03/20 @ 4:30 AM - 6:30 PM EST', desc: 'ACM-W/ACM will be hosting TechGirlz workshop virtually for middle school girls! If you would be interested in volunteering please fill out the form using the link. This is a great opportunity to get some experience on your resume and also help a great cause.'}
         ]
       }
   }
