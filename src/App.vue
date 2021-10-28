@@ -3,9 +3,9 @@
     <Navbar></Navbar>
     <Home></Home>
     <!--
-      <Events></Events>
-    -->
+    <Events></Events>
     <Opportunities></Opportunities>
+    -->
     <About></About>
     <Board></Board>
     <Faq></Faq>
@@ -81,7 +81,7 @@ a:hover{
 .no-show{
   height: 5vh;
 }
-@media (max-width: 768px){ 
+@media (max-width: 768px){
   h1, h2, h3, h4{
     font-size: 14pt;
   }

@@ -7,7 +7,7 @@
       <div class="container">
         <div>
           <h3></h3>
-          <h4><a href="https://temple.zoom.us/j/93833159419"><i class="far fa-hand-pointer"></i> Click here to join the meeting! <br>(Join with Temple email)</a></h4>
+          <h4><a href="https://bit.ly/tu-acmw"><i class="far fa-hand-pointer"></i> Click here to join the meeting! <br>(Join with Temple email)</a></h4>
         </div>
       </div>
     </div>

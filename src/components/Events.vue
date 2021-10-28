@@ -41,7 +41,7 @@
         </div>
       </div>
     </div>
-  </section> 
+  </section>
 </template>
 <script>
 import Timeline from './Timeline';
@@ -59,10 +59,12 @@ export default {
         //{ id: 0, date: 'Monday, 12/7/2020', time: '3 - 4 PM EST', location: 'https://temple.zoom.us/j/93833159419', meeting: 'Tips for Self Care During Finals & Virtual Bob Ross Paint Night'},
       ],
       pastevents: { btntext: 'Past Events', link: '/pastevents'},
-      events: [ 
-        // { id: 0, pic: require('@/assets/events/spring_2021/gbm1.png') }
+      events: [
+        //require('@/assets/events/spring_2021/internPanel.png'),
+        //require('@/assets/events/spring_2021/sipchat.png'),
+        //require('@/assets/events/spring_2021/technical_interview_preparation.png')
       ],
-      upcomingEvent: require('@/assets/events/spring_2021/homeworknight28.png')
+      upcomingEvent: require('@/assets/events/spring_2021/gbm1.png')
     }
   }
 }
@@ -87,10 +89,10 @@ h2, h3{
 table{
   width: 100%;
   background-color: #232323;
-  color: #d7d5d9; 
+  color: #d7d5d9;
 }
 th{
-  text-align: center; 
+  text-align: center;
   color: #D6C1D7;
   font-weight: normal;
 }
@@ -129,7 +131,7 @@ img{
   justify-content: center;
   align-content: center;
 }
-@media (max-width: 768px){ 
+@media (max-width: 768px){
   .jumbotron{
     margin: 0;
     width: 100%;

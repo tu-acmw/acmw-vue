@@ -46,7 +46,7 @@ export default {
         {
           name: "Hadassah Galapo",
           position: "Secretary",
-          linkedin: "https://www.linkedin.com/in/hadassah-galapo-4100b61b8/",          
+          linkedin: "https://www.linkedin.com/in/hadassah-galapo-4100b61b8/",
           img: require("@/assets/profile/dassie.png"),
         }, //Need profile picture
         {
@@ -54,11 +54,11 @@ export default {
           position: "Treasurer",
           linkedin: "https://www.linkedin.com/in/jiajingan/",
           img: require("@/assets/profile/jackie.png"),
-        }, 
+        },
         {
           name: "Delanie Wolff",
           position: "Events and Community Service Officer Coordinator",
-          linkedin: "https://www.linkedin.com/in/delaniewolff/",          
+          linkedin: "https://www.linkedin.com/in/delaniewolff/",
           img: require("@/assets/acmw_logo.png"),
         }, // Need profile picture
         {
@@ -86,7 +86,7 @@ export default {
           img: require("@/assets/acmw_logo.png"),
         }, //Need linkedin and profile picture
       ]
-    }  
+    }
   },
   methods (){
   }
@@ -133,7 +133,7 @@ p{
   color: #d7d5d9;
 }
 @media (max-width: 768px){
-  .jumbotron{ 
+  .jumbotron{
     width: 100%;
     margin: 0;
     border-radius: 0;
